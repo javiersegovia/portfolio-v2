@@ -1,21 +1,27 @@
-import '@styles/main.css'
-
-import type { FC } from 'react'
 import type { AppProps } from 'next/app'
-import { GlobalStyles } from 'twin.macro'
+import { GlobalStyles } from '@components/Layout/GlobalStyles'
 
-const Noop: FC = ({ children }) => <>{children}</>
+import { ThemeProvider } from '@emotion/react'
+import defaultTheme from 'tailwindcss/defaultTheme'
+
+import '@styles/main.css'
+import '@styles/slick.css'
+import '@styles/slick-theme.css'
+
+const theme = {
+  breakpoints: {
+    ...defaultTheme.screens,
+  },
+}
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const Layout = (Component as any).Layout || Noop
-
   return (
-    <div>
-      <GlobalStyles />
-      <Layout pageProps={pageProps}>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
         <Component {...pageProps} />
-      </Layout>
-    </div>
+      </ThemeProvider>
+    </>
   )
 }
 

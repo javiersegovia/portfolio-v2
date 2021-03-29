@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -10,7 +11,7 @@ module.exports = {
         black: colors.black,
         white: colors.white,
         indigo: colors.indigo,
-        red: colors.rose,
+        red: colors.red,
         yellow: colors.amber,
         orange: colors.orange,
         green: colors.emerald,
@@ -19,6 +20,10 @@ module.exports = {
         teal: colors.teal,
         purple: colors.purple,
       },
+    },
+    fontFamily: {
+      sans: ['Cano', ...defaultTheme.fontFamily.sans],
+      mono: ['UniviaPro', ...defaultTheme.fontFamily.mono],
     },
   },
   variants: {},

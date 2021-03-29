@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsxImportSource": "@emotion/react",
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
@@ -24,13 +25,21 @@
       "@components/*": ["src/components/*"],
       "@lib/*": ["src/lib/*"],
       "@pages/*": ["src/pages/*"],
+      "public/*": ["./public/*"],
+      "@public/*": ["./public/*"],
       "@root/*": ["./*"],
-      "@styles/*": ["styles/*"],
+      "@styles/*": ["./public/styles/*"],
       "@tests/*": ["tests/*"],
       "@views/*": ["src/views/*"]
-    }
+    },
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "tests/setuptjs"],
-  "files": ["twin.d.ts"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "ts/svg.d.ts",
+    "ts/twin.d.ts"
+  ]
 }

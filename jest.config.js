@@ -16,9 +16,10 @@ module.exports = {
     '^@components/(.*)$': '<rootDir>/src/components/$1',
     '^@lib/(.*)$': '<rootDir>/src/lib/$1',
     '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@public/(.*)$': '<rootDir>/src/public/$1',
     '^@root/(.*)$': '<rootDir>/$1',
     '^@tests/(.*)$': '<rootDir>/tests/$1',
-    '^@styles/(.*)$': '<rootDir>/styles/$1',
+    '^@styles/(.*)$': '<rootDir>/public/styles/$1',
     '^@views/(.*)$': '<rootDir>/src/views/$1',
   },
   collectCoverageFrom: [
