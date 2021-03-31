@@ -1,7 +1,6 @@
 import Slider from 'react-slick'
 import Image from 'next/image'
 import { Settings } from 'react-slick'
-import _tw from 'twin.macro'
 
 const slideSettings: Settings = {
   slidesToShow: 10,
@@ -17,22 +16,36 @@ const slideSettings: Settings = {
 
 // Todo: Add tooltips to every item
 
+const IMAGE_WIDTH = 40
+const IMAGE_HEIGHT = 40
+
+const imagePaths = [
+  '/svg/icon-react.svg',
+  '/svg/icon-graphql.svg',
+  '/svg/icon-docker.svg',
+  '/svg/icon-nextjs.svg',
+  '/svg/icon-nestjs.svg',
+  '/svg/icon-nodejs.svg',
+  '/svg/icon-ruby.svg',
+  '/svg/icon-rails.svg',
+  '/svg/icon-reactquery.svg',
+  '/svg/icon-redux.svg',
+  '/svg/icon-apollo.svg',
+  '/svg/icon-prisma.svg',
+  '/svg/icon-postgresql.svg',
+]
+
 export const TechnologiesSlider = () => {
   return (
     <Slider {...slideSettings} tw="max-w-md">
-      <Image src="/svg/icon-react.svg" width={40} height={40} />
-      <Image src="/svg/icon-graphql.svg" width={40} height={40} />
-      <Image src="/svg/icon-docker.svg" width={40} height={40} />
-      <Image src="/svg/icon-nextjs.svg" width={40} height={40} />
-      <Image src="/svg/icon-nestjs.svg" width={40} height={40} />
-      <Image src="/svg/icon-nodejs.svg" width={40} height={40} />
-      <Image src="/svg/icon-ruby.svg" width={40} height={40} />
-      <Image src="/svg/icon-rails.svg" width={40} height={40} />
-      <Image src="/svg/icon-reactquery.svg" width={40} height={40} />
-      <Image src="/svg/icon-redux.svg" width={40} height={40} />
-      <Image src="/svg/icon-apollo.svg" width={40} height={40} />
-      <Image src="/svg/icon-prisma.svg" width={40} height={40} />
-      <Image src="/svg/icon-postgresql.svg" width={40} height={40} />
+      {imagePaths.map((imgPath) => (
+        <Image
+          key={imgPath}
+          src={imgPath}
+          width={IMAGE_WIDTH}
+          height={IMAGE_HEIGHT}
+        />
+      ))}
     </Slider>
   )
 }

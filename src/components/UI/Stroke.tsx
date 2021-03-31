@@ -1,4 +1,4 @@
-import _tw, { styled } from 'twin.macro'
+import { styled } from 'twin.macro'
 
 type StrokeProps = {
   children: React.ReactNode

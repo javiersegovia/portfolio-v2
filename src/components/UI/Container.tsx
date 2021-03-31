@@ -1,5 +1,5 @@
 import React from 'react'
-import _tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 import { up } from 'styled-breakpoints'
 
 interface ContainerProps {
@@ -23,7 +23,7 @@ const StyledContainer = styled.section<ContainerProps>`
     `}
   }
 
-  ${_tw`px-7 sm:px-4 mx-auto`}
+  ${tw`px-7 sm:px-4 mx-auto`}
 `
 
 export const Container = ({ children, ...otherProps }: ContainerProps) => {

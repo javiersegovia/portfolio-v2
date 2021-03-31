@@ -1,4 +1,3 @@
-import _tw from 'twin.macro'
 import { Navbar } from '@components/Layout/Navbar'
 import { Header } from './Header'
 import { ArrowButton } from './ArrowButton'

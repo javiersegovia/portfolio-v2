@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import _tw from 'twin.macro'
 import { HomeView } from '@views/home'
 
 const IndexPage = () => {

@@ -1,4 +1,3 @@
-import _tw from 'twin.macro'
 import { GuyWithMonitor } from '@components/SVG'
 import { Container } from '../../components/UI/Container'
 import { Stroke } from '../../components/UI/Stroke'

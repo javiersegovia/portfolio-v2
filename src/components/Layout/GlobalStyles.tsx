@@ -4,7 +4,13 @@ import { Global, css } from '@emotion/react'
 const customStyles = css`
   *:focus,
   button:focus {
-    ${_tw`outline-none`}
+    ${_tw`outline-none!`}
+  }
+
+  body {
+    padding-right: 15px;
+
+    ${_tw`w-full h-full`}
   }
 
   body,

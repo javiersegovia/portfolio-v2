@@ -1,4 +1,3 @@
-import _tw from 'twin.macro'
 import { Post, PostPreview } from '@components/Post/PostPreview'
 import { Circle, Container } from '@components/UI'
 
@@ -59,7 +58,7 @@ export const Writing = ({ limit }: WritingProps) => {
         <Circle size={130}>
           <button
             tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-teal-500 font-bold"
-            // Todo: build modal functionality here
+            // Todo: redirect to articles list here
             onClick={() => alert('hello')}
           >
             View all

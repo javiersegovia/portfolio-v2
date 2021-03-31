@@ -1,4 +1,4 @@
-import _tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 
 type CircleProps = {
   children?: React.ReactNode
@@ -12,9 +12,9 @@ const StyledCircle = styled.div<CircleProps>`
 
   ${(props) =>
     props.withPointer &&
-    _tw`w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer`}
+    tw`w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer`}
 
-  ${_tw`rounded-full absolute top-0 left-0 border`}
+  ${tw`rounded-full absolute top-0 left-0 border`}
 `
 
 export const Circle = ({

@@ -1,4 +1,4 @@
-import _tw, { styled } from 'twin.macro'
+import { styled } from 'twin.macro'
 
 interface PostThumbnailProps {
   isOdd: boolean
@@ -7,8 +7,9 @@ interface PostThumbnailProps {
 const PostThumbnail = styled.div<PostThumbnailProps>`
   height: 150px;
   width: 17.5rem;
+
+  // Todo: remove this bg and add the proper img thumbnail
   background: teal;
-  padding: 10px;
   clip-path: polygon(0% 1%, 98% 2%, 94% 99%, 4% 99%);
 
   ${(props) =>

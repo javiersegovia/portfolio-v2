@@ -1,4 +1,4 @@
-import _tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 import { Container } from '@components/UI'
 import { Circle } from '@components/UI/Circle'
 import { GuyPresenting } from '@components/SVG/GuyPresenting'
@@ -24,7 +24,7 @@ const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
   return (
     <StyledWrapper tw="grid gap-5 items-center">
       <Circle />
-      <article css={[isOdd && _tw`row-start-1 text-right`]}>
+      <article css={[isOdd && tw`row-start-1 text-right`]}>
         <h4 tw="text-5xl">{project.title}</h4>
         <p tw="mt-5">{project.shortDescription}</p>
       </article>

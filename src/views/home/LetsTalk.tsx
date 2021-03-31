@@ -1,23 +1,23 @@
-import _tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 import { Phone } from '@components/SVG'
 import { GuyOnWall } from '../../components/SVG/GuyOnWall'
 
 const StyledPhoneWrapper = styled.div`
   max-width: 386px;
 
-  ${_tw`absolute mt-auto mx-auto bottom-0 left-0 right-0`}
+  ${tw`absolute mt-auto mx-auto bottom-0 left-0 right-0`}
 `
 
 const StyledText = styled.div`
   max-width: 260px;
 
-  ${_tw`m-auto text-center text-8xl z-10`}
+  ${tw`m-auto text-center text-8xl z-10`}
 `
 
 const StyledGuy = styled.div`
   margin-left: 178px;
 
-  ${_tw`absolute bottom-0 left-1/2 -mb-4`}
+  ${tw`absolute bottom-0 left-1/2 -mb-4`}
 `
 
 export const LetsTalk = () => {

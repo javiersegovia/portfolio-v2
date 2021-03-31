@@ -1,13 +1,19 @@
-import _tw from 'twin.macro'
 import { Container } from '@components/UI/Container'
 import { Circle } from '@components/UI/Circle'
 import { RecommendedPost } from '@components/Post/RecommendedPost'
 import { Stroke } from '@components/UI/Stroke'
 import { MainTitle } from './Header.styles'
+import { useState } from 'react'
+import { Modal } from '@components/UI/Modal'
+import { SendMessage } from './SendMessage'
 
 export const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const closeModal = () => setIsModalOpen(false)
+
   return (
-    <header>
+    <header tw="my-auto">
       {/* todo: pull this Container to modify its custom maxWidth with emotion */}
       <Container tw="flex flex-col" smaller>
         <h3>
@@ -25,13 +31,19 @@ export const Header = () => {
         <Circle>
           <button
             tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono"
-            // Todo: build modal functionality here
-            onClick={() => alert('hello')}
+            onClick={() => setIsModalOpen(true)}
           >
             Want to talk? <br />
             <span tw="text-teal-500 font-bold">Send me a message</span>
           </button>
         </Circle>
+
+        {isModalOpen && (
+          <Modal onRequestClose={closeModal}>
+            {({ ref }) => <SendMessage ref={ref} />}
+          </Modal>
+        )}
+
         <div tw="text-right">
           <p tw="text-teal-500 font-bold text-lg mb-3">
             ... and I like to write too. My last content:
