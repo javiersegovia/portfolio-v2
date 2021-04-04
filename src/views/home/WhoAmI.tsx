@@ -1,18 +1,17 @@
 import { GuyWithMonitor } from '@components/SVG'
-import { Container } from '../../components/UI/Container'
-import { Stroke } from '../../components/UI/Stroke'
+import { Title, Container, Stroke } from '@components/UI'
 import { TechnologiesSlider } from './TechnologiesSlider'
 
 export const WhoAmI = () => {
   return (
     <>
-      <Container tw="w-full h-auto flex flex-row items-center justify-center space-x-5">
-        <div>
-          <h2 tw="text-7xl">
+      <Container tw="relative w-full h-auto flex flex-row items-center justify-center space-x-5 px-8 xl:px-0">
+        <div tw="mt-72 sm:mt-60 bg-white z-10 border-teal-500 border-2 rounded-lg py-10 max-w-lg px-10 md:px-8 lg:(mt-0 bg-transparent border-none) lg:max-w-full">
+          <Title tw="text-center lg:text-left">
             <Stroke tw="text-white">So,</Stroke>{' '}
             <span tw="text-teal-500">who am I?</span>
-          </h2>
-          <article tw="ml-14 text-base leading-8 mt-5 space-y-4">
+          </Title>
+          <article tw="ml-0 text-sm lg:text-base lg:leading-8 mt-5 space-y-4 xl:ml-14 text-justify">
             <p>
               Javier Segovia. A developer of 24 years old based in Venezuela.
             </p>
@@ -30,11 +29,13 @@ export const WhoAmI = () => {
             </p>
           </article>
         </div>
+
         <div>
-          <GuyWithMonitor />
+          <GuyWithMonitor tw="absolute top-0 left-0 right-0 mx-auto lg:relative width[330px] sm:width[auto]" />
         </div>
       </Container>
-      <Container tw="mt-10">
+
+      <Container tw="relative mt-10 z-10 bg-white w-full h-full flex items-center flex-col text-center">
         <p>Today, these are some of the tools that I have experience with:</p>
         <div tw="mt-5">
           <TechnologiesSlider />

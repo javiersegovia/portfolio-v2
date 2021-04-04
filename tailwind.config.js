@@ -5,6 +5,9 @@ module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontSize: {
+        '10xl': ['9rem', '10rem'],
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

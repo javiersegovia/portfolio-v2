@@ -8,8 +8,6 @@ const customStyles = css`
   }
 
   body {
-    padding-right: 15px;
-
     ${_tw`w-full h-full`}
   }
 

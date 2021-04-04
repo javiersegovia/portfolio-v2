@@ -1,10 +1,13 @@
-export const Phone = () => (
+import { theme, css } from 'twin.macro'
+
+export const Phone = ({ ...props }) => (
   <svg
     width="385"
     height="775"
     viewBox="0 0 385 775"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g id="Phone">
       <g id="Vector">
@@ -27,17 +30,9 @@ export const Phone = () => (
           stroke="black"
           strokeWidth="2"
           mask="url(#phone-path-2-inside-2)"
-        />
-      </g>
-      <g id="Group 5954">
-        <circle id="Ellipse 15" cx="193.5" cy="700.5" r="25" stroke="black" />
-        <circle
-          id="Ellipse 16"
-          cx="191"
-          cy="700"
-          r="24.5"
-          // fill="#14b8a6"
-          stroke="black"
+          css={css({
+            fill: theme`colors.gray.300`,
+          })}
         />
       </g>
     </g>

@@ -5,12 +5,13 @@ export const ArrowButton = () => {
     <div tw="w-full mt-auto flex">
       {/* TODO: add animation and behaviour to this button */}
       <button
-        tw="mx-auto cursor-pointer"
+        type="button"
+        tw="relative mx-auto cursor-pointer hidden sm:block md:(w-16 h-16) lg:(w-20 h-20)"
         onClick={() => {
           alert('downButton')
         }}
       >
-        <Image src="/svg/arrow.svg" width={80} height={80} />
+        <Image src="/svg/arrow.svg" layout="fill" />
       </button>
     </div>
   )

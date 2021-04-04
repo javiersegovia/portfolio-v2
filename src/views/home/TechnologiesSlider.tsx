@@ -37,7 +37,7 @@ const imagePaths = [
 
 export const TechnologiesSlider = () => {
   return (
-    <Slider {...slideSettings} tw="max-w-md">
+    <Slider {...slideSettings} tw="max-w-xs sm:max-w-md ">
       {imagePaths.map((imgPath) => (
         <Image
           key={imgPath}

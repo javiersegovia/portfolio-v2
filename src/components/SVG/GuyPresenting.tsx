@@ -1,10 +1,11 @@
-export const GuyPresenting = () => (
+export const GuyPresenting = ({ ...props }) => (
   <svg
     width="346"
     height="749"
     viewBox="0 0 346 749"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g clipPath="url(#clip1000)">
       <mask id="guy-presenting-path-1-inside-1" fill="white">

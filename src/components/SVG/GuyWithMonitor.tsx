@@ -1,10 +1,11 @@
-export const GuyWithMonitor = () => (
+export const GuyWithMonitor = ({ ...props }) => (
   <svg
     width="466"
     height="784"
     viewBox="0 0 466 784"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g id="Group 5932">
       <g id="tech2">

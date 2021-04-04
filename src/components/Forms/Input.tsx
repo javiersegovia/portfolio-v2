@@ -1,4 +1,3 @@
-import React from 'react'
 import tw, { css } from 'twin.macro'
 import {
   FieldErrors,
@@ -19,19 +18,18 @@ export const errorStyles = tw`text-red-600 border-red-500 focus:border-red-500 f
 
 type TInputProps = {
   name: string
+  label?: string
   value?: string
-  type: string
+  type?: string
   className?: string
-  placeholder?: string | undefined
-  label: string
-  error?: FieldErrors | FieldError | undefined
+  placeholder?: string
+  error?: FieldErrors | FieldError
   validations?: RegisterOptions
   isTextArea?: boolean
 }
 
-const Input = ({
+export const Input = ({
   name,
-  value,
   className = '',
   type = 'text',
   placeholder,
@@ -53,14 +51,11 @@ const Input = ({
         name={name}
         type={type}
         placeholder={placeholder}
-        value={value}
         rows={3}
-        css={[baseStyles, !error && errorStyles]}
+        css={[baseStyles, !!error && errorStyles]}
         className={className}
       />
       {Boolean(validations) && <ErrorMessage>{error?.message}</ErrorMessage>}
     </Label>
   )
 }
-
-export default Input

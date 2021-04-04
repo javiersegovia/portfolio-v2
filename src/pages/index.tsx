@@ -6,7 +6,7 @@ const IndexPage = () => {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <title>Javier Segovia | Web Developer</title>
+        <title>Javier Segovia</title>
       </Head>
       <HomeView />
     </>
