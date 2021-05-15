@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Settings } from 'react-slick'
 
 const slideSettings: Settings = {
+  arrows: false,
+  dots: false,
   slidesToShow: 10,
   slidesToScroll: 1,
   speed: 1500,

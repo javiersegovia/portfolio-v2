@@ -1,4 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
 import { Circle } from '@components/UI'
 import tw, { css, styled } from 'twin.macro'
 import { down } from 'styled-breakpoints'
@@ -17,7 +16,7 @@ export const StyledContactWrapper = styled.div`
   width: 320px;
   height: 685px;
 
-  ${tw`z-10 flex max-w-full absolute mx-auto mt-auto mb-20 top-16 left-0 right-0`}
+  ${tw`z-10 flex max-w-full relative sm:absolute mx-auto mt-auto mb-20 top-16 left-0 right-0`}
 `
 
 export const StyledGuy = styled.div`
@@ -33,11 +32,4 @@ export const CustomCircle = styled(Circle)`
     width: 160px;
     height: 160px;
   }
-`
-
-export const HeaderCircleCSS = css`
-  width: 160px;
-  height: 160px;
-
-  ${tw`sm:(width[11.5rem] height[11.5rem]) lg:(width[13.75rem] height[13.75rem])`}
 `

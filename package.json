@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf ./.next",
     "predev": "npm run clean",
-    "dev": "next dev",
+    "dev": "next dev -p 3030",
     "prebuild": "npm run clean",
     "build": "next build",
     "start": "next start",
@@ -74,6 +74,7 @@
     "react-popper": "^2.2.5",
     "react-portal": "^4.2.1",
     "react-slick": "^0.28.1",
+    "react-spring": "^9.0.0",
     "styled-breakpoints": "^10.0.0"
   },
   "devDependencies": {

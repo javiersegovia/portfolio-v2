@@ -24,7 +24,7 @@ export const FullScreen = ({
       className="w-full h-screen relative flex flex-col z-10"
       css={[
         backgroundColor === 'white' && tw`bg-white`,
-        minScreen && tw`min-h-screen`,
+        minScreen && tw`min-h-screen h-full`,
       ]}
       {...otherProps}
     >

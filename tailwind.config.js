@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       fontSize: {
@@ -22,6 +23,7 @@ module.exports = {
         blue: colors.blue,
         teal: colors.teal,
         purple: colors.purple,
+        almostBlack: '#131313',
       },
     },
     fontFamily: {

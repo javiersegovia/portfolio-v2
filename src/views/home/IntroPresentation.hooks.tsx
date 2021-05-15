@@ -5,7 +5,7 @@ import { useTimeline } from '@lib/hooks/useTimeline'
 
 type TUseAnimations = (timelineOptions?: gsap.TimelineVars) => any
 
-export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
+export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
   const introRef = useRef<HTMLHeadingElement[]>([])
   const wrapperRef = useRef<HTMLDivElement>(null)
   const screenRef = useRef<HTMLDivElement>(null)
@@ -31,7 +31,7 @@ export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
           {
             fontSize: 140 + i * 30,
             duration: 1,
-            yPercent: 0,
+            yPercent: 50,
             delay: 0,
             skewX: 10,
             skewY: 20,

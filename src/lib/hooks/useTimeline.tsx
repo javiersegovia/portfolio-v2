@@ -1,33 +1,35 @@
 import gsap from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 // todo: leave comments
 
+export type AnimationsFn = (timeline: gsap.core.Timeline) => void
+
 type TUseTimeline = (
-  animationsFunc: (timeline: gsap.core.Timeline) => void,
+  animationsFunc: AnimationsFn,
   timelineOptions?: gsap.TimelineVars
-) => {
-  timeline: gsap.core.Timeline
-}
+) => gsap.core.Timeline
 
 export const useTimeline: TUseTimeline = (
   animationsFunc,
   { ...timelineOptions }
 ) => {
-  const timeline = gsap.timeline({
-    ...timelineOptions,
-  })
+  const timelineRef = useRef(
+    gsap.timeline({
+      ...timelineOptions,
+    })
+  )
 
   const animationRef = useRef(animationsFunc)
 
   useEffect(() => {
-    animationRef?.current(timeline)
+    const timeline = timelineRef.current
+
+    animationRef?.current?.(timeline)
     return () => {
       timeline.kill()
     }
-  }, [animationRef, timeline])
+  }, [animationRef])
 
-  return {
-    timeline,
-  }
+  return timelineRef.current
 }

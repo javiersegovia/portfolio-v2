@@ -1,20 +1,20 @@
 import { FullScreen } from '@components/UI'
-import { useAnimations } from './IntroPresentation.hooks'
+import { useIntroAnimations } from './IntroPresentation.hooks'
 
 const words = [
   'innovation',
   'minimalism',
   'creativity',
   'technology',
-  'evolution',
+  'improvement',
 ]
 
 interface IntroPresentationProps {
-  onComplete: any
+  onComplete: () => void
 }
 
 export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
-  const { screenRef, wrapperRef, introRef } = useAnimations({
+  const { screenRef, wrapperRef, introRef } = useIntroAnimations({
     onComplete,
   })
 

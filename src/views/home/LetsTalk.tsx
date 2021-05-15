@@ -16,7 +16,7 @@ export const LetsTalk = () => {
   return (
     <>
       <StyledPhoneWrapper>
-        <Phone tw="max-w-full mx-auto" />
+        <Phone tw="max-w-full mx-auto hidden sm:block" />
 
         <StyledContactWrapper>
           <div tw="relative w-full h-full p-6 flex flex-col">
@@ -37,10 +37,14 @@ export const LetsTalk = () => {
               </div>
             )}
 
-            <button tw="block mx-auto mt-auto" type="button" onClick={toggle}>
+            <button
+              tw="mx-auto mt-auto hidden sm:block overflow-hidden rounded-full"
+              type="button"
+              onClick={toggle}
+            >
               <Circle
                 size={50}
-                tw="text-black bg-white z-10 hover:(bg-teal-500 text-white)"
+                tw="text-black bg-white dark:text-white dark:bg-black z-10 hover:(text-red-500)"
               >
                 {isFormOpen && <RiCloseFill tw="m-auto text-2xl" />}
               </Circle>

@@ -1,7 +1,6 @@
 import tw, { styled } from 'twin.macro'
 import { Circle } from '@components/UI/Circle'
 import { useToggle } from '@lib/hooks/useToggle'
-import { HeaderCircleCSS } from './Home.styles'
 import { down } from 'styled-breakpoints'
 import { ProjectModal } from './ProjectModal'
 import { Project } from './Projects'
@@ -29,7 +28,7 @@ export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
     <>
       <StyledWrapper tw="grid gap-5 items-center justify-items-center sm:justify-items-auto">
         <button type="button" onClick={openShowcase} tw="flex">
-          <Circle circleCss={HeaderCircleCSS} />
+          <Circle />
         </button>
         <article
           tw="text-center md:text-left"

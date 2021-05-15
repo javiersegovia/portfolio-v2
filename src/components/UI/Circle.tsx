@@ -1,48 +1,61 @@
-import tw, { styled } from 'twin.macro'
-import { SerializedStyles } from '@emotion/utils'
+import { useAnimations } from './Circle.hooks'
 
 type CircleProps = {
   children?: React.ReactNode
   size?: number
-  withPointer?: boolean
-  circleCss?: SerializedStyles
+  paused?: boolean
+  withAnimation?: boolean
 }
-
-const StyledCircle = styled.div<CircleProps>`
-  width: ${(props) => props.size}px;
-  height: ${(props) => props.size}px;
-
-  ${(props) =>
-    props.withPointer &&
-    tw`w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer`}
-
-  ${tw`rounded-full top-0 left-0 border`}
-`
 
 export const Circle = ({
   children,
-  withPointer = false,
-  size = 220,
-  circleCss,
-  ...otherProps
+  withAnimation = false,
+  paused = false,
+  size = 250,
+  ...styles
 }: CircleProps) => {
+  const { progress, contentRef } = useAnimations({
+    paused,
+    withAnimation,
+  })
   return (
-    <div tw="relative flex items-center justify-center text-center text-lg">
-      <StyledCircle
-        tw="border-teal-400 absolute ml-1 mt-1"
-        size={size}
-        withPointer={withPointer}
-        css={circleCss}
-      />
-      <StyledCircle
-        tw="border-black flex flex-col"
-        size={size}
-        withPointer={withPointer}
-        css={circleCss}
-        {...otherProps}
+    <div
+      tw="relative flex items-center justify-center text-center text-lg"
+      style={{
+        width: size,
+        height: size,
+      }}
+      {...styles}
+    >
+      <svg
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        tw="absolute w-full h-full"
+        preserveAspectRatio="xMinYMin"
       >
+        <circle
+          cx="50%"
+          cy="50%"
+          r="48%"
+          strokeDasharray={`${withAnimation ? progress : 1000}, 1000`}
+          strokeDashoffset={`${withAnimation ? progress : 1000}, 1000`}
+          stroke="#00BA82"
+        />
+        <circle
+          cx="51%"
+          cy="52%"
+          r="48%"
+          stroke="black"
+          strokeDasharray={`${withAnimation ? progress : 1000}, 1000`}
+          strokeDashoffset={`${withAnimation ? progress : 1000}, 1000`}
+          tw="text-black dark:text-white stroke-current"
+        />
+      </svg>
+
+      <div ref={contentRef}>
+        <div className="trigger" />
         {children}
-      </StyledCircle>
+      </div>
     </div>
   )
 }

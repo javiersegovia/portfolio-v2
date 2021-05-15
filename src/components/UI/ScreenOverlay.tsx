@@ -18,7 +18,10 @@ export const ScreenOverlay = ({
       <div
         role="dialog"
         tw="fixed w-screen h-screen top-0 bottom-0 left-0 right-0 z-10 flex"
-        css={[!withoutStyles && tw`bg-gray-300 bg-opacity-70 z-40`]}
+        css={[
+          !withoutStyles &&
+            tw`bg-gray-300 dark:bg-gray-600 dark:bg-opacity-70 bg-opacity-70 z-40`,
+        ]}
         {...elementProps}
       >
         {children}

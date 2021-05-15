@@ -50,7 +50,7 @@ export const Projects = () => {
       </Title>
 
       <Container tw="relative w-full h-auto flex flex-col items-center justify-center md:(flex-row) space-x-5 md:max-w-screen-xl">
-        <div tw="bg-white mt-48 p-14 border-2 border-teal-500 rounded-lg md:(border-none p-0) lg:p-0 md:mt-0 lg:bg-transparent z-10">
+        <div tw="bg-white dark:bg-black mt-48 p-14 border-2 border-teal-500 rounded-lg md:(border-none p-0) lg:p-0 md:mt-0 lg:bg-transparent z-10">
           <div tw="max-w-2xl space-y-20 md:space-y-56 mt-0 md:mt-20">
             {projects.map((project, idx) => (
               <ProjectShowcase

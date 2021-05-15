@@ -1,4 +1,4 @@
-import _tw, { GlobalStyles as BaseStyles } from 'twin.macro'
+import _tw, { GlobalStyles as BaseStyles, theme } from 'twin.macro'
 import { Global, css } from '@emotion/react'
 
 const customStyles = css`
@@ -16,6 +16,10 @@ const customStyles = css`
     ${_tw`font-mono`}
   }
 
+  .dark body {
+    ${_tw`bg-black`}
+  }
+
   h1,
   h2,
   h3,
@@ -27,6 +31,16 @@ const customStyles = css`
 
   a {
     cursor: pointer;
+  }
+
+  .svgElement {
+    fill: #fff;
+  }
+
+  .dark & {
+    .svgElement {
+      fill: ${theme`colors.black`};
+    }
   }
 `
 

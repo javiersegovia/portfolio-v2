@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { GlobalStyles } from '@components/Layout/Global.styles'
 
+import { ThemeProvider as NextThemeProvider } from 'next-themes'
 import { ThemeProvider } from '@emotion/react'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
@@ -24,10 +25,12 @@ if (typeof window !== 'undefined') {
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <NextThemeProvider attribute="class">
+        <ThemeProvider theme={theme}>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </NextThemeProvider>
     </>
   )
 }
