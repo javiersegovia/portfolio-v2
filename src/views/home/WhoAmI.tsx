@@ -1,6 +1,9 @@
 import { GuyWithMonitor } from '@components/SVG'
 import { Title, Container, Stroke } from '@components/UI'
-import Image from 'next/image'
+
+import Trans from 'next-translate/Trans'
+import useTranslation from 'next-translate/useTranslation'
+import { Fragment } from 'react'
 import { styled } from 'twin.macro'
 
 const IMAGE_WIDTH = 40
@@ -39,32 +42,43 @@ const imagePaths = {
 }
 
 export const WhoAmI = () => {
+  const { t } = useTranslation('home')
+
   return (
     <>
       <Container tw="relative w-full h-auto flex flex-row items-center justify-center space-x-5 px-8 xl:px-0">
         <div tw="mt-72 sm:mt-60 bg-white dark:bg-black z-10 border-teal-500 border-2 rounded-lg py-10 max-w-lg px-10 md:px-8 lg:(mt-0 bg-transparent border-none)">
           <Title tw="text-center lg:text-left">
-            <Stroke tw="text-white">So,</Stroke>{' '}
-            <span tw="text-teal-500">who am I?</span>
+            {/* {t`who-am-i.title`} */}
+            <Trans
+              i18nKey="home:who-am-i.title"
+              components={[<span key="bold" tw="text-teal-500" />]}
+            />
+            {/* <Stroke tw="text-white">So,</Stroke>{' '}
+            <span tw="text-teal-500">who am I?</span> */}
           </Title>
           <article tw="ml-0 text-sm lg:text-base leading-6 lg:leading-8 mt-5 space-y-4 xl:ml-14 text-justify">
             <p>
-              Javier Segovia. A developer of 24 years old based in Venezuela.
+              {t`who-am-i.content-1`}
+              {/* Javier Segovia. A developer of 24 years old based in Venezuela. */}
             </p>
             <p>
-              Back in 2016, I started my career as a developer without even
+              {t`who-am-i.content-2`}
+              {/* Back in 2016, I started my career as a developer without even
               realizing it. I tried to build a web page with basic HTML, CSS and
               Javascript just as a hobby. I found out that programming was
-              actually fun. So I kept learning, practicing, and hacking things.
+              actually fun. So I kept learning, practicing, and hacking things. */}
             </p>
             <p>
-              Since then, I’ve had diverse experiences in the development world:
-              from working with multiple clients as an indie freelancer, to be
-              part of a whole team of amazing developers following an agile
-              methodology.
+              {t`who-am-i.content-3`}
+              {/* Since then, I’ve had diverse experiences in the development world: */}
+              {/* from working with multiple clients as an indie freelancer, to be */}
+              {/* part of a whole team of amazing developers following an agile */}
+              {/* methodology. */}
             </p>
             <p>
-              Today, these are some of the tools that I have experience with:
+              {t`who-am-i.content-4`}
+              {/* Today, these are some of the tools that I have experience with: */}
             </p>
             <StyledImageWrapper tw="dark:opacity-70 flex flex-wrap justify-center sm:justify-start">
               {(Object.keys(imagePaths) as Array<keyof typeof imagePaths>).map(

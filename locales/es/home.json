@@ -1,0 +1,41 @@
+{
+  "header": {
+    "hello": "Hola!",
+    "i-am": "Soy",
+    "subtitle": "Un desarrollador especialista en construir experiencias excepcionales para la web",
+    "question": "¿Quieres hablar?",
+    "contact-me": "Contáctame"
+  },
+  "who-am-i": {
+    "title": "Sobre <0> mi</0>",
+    "content-1": "Javier Segovia. Un desarrollador venezolano de 24 años",
+    "content-2": "En 2016, I started my career as a developer without even realizing it. I tried to build a web page with basic HTML, CSS and Javascript just as a hobby. I found out that programming was actually fun. So I kept learning, practicing, and hacking things.",
+    "content-3": "Since then, I’ve had diverse experiences in the development world: from working with multiple clients as an indie freelancer, to be part of a whole team of amazing developers following an agile methodology.",
+    "content-4": "Today, these are some of the tools that I have experience with:"
+  },
+  "recent-work": {
+    "title": "Proyectos <0>recientes</0>",
+    "works": [
+      {
+        "title": "HoyTrabajas",
+        "shortDescription": "Startup colombiana de reclutamiento basado en tecnología",
+        "description": [
+          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
+          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
+        ]
+      },
+      {
+        "title": "Ecommerce Boilerplate",
+        "shortDescription": "Proyecto personal. Ecommerce con múltiples funcionalidades.",
+        "description": [
+          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
+          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
+        ]
+      }
+    ]
+  },
+  "lets-talk": {
+    "question": "¿Alguna idea?",
+    "call-to-action": "¡Conversemos!"
+  }
+}

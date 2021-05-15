@@ -9,9 +9,13 @@ import {
   StyledGuy,
   StyledPhoneWrapper,
 } from './Home.styles'
+import useTranslation from 'next-translate/useTranslation'
+import tw from 'twin.macro'
 
 export const LetsTalk = () => {
   const [isFormOpen, { toggle, setTrue: openForm }] = useToggle()
+
+  const { t, lang } = useTranslation('home')
 
   return (
     <>
@@ -23,15 +27,16 @@ export const LetsTalk = () => {
             {isFormOpen ? (
               <SendMessage />
             ) : (
-              <div tw="m-auto text-center px-8 pb-16">
+              <div tw="m-auto max-w-full text-center px-8 pb-16">
                 <h2 tw="text-5xl">
-                  Got an idea? <br />
+                  {t`lets-talk.question`} <br />
                   <button
                     type="button"
                     tw="cursor-pointer text-7xl text-teal-500 mt-10 underline leading-tight"
+                    css={[lang === 'es' && tw`text-3xl`]}
                     onClick={openForm}
                   >
-                    Let&apos;s talk
+                    {t`lets-talk.call-to-action`}
                   </button>
                 </h2>
               </div>

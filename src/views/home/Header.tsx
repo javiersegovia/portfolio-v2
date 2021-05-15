@@ -5,6 +5,7 @@ import { SendMessage } from './SendMessage'
 import { useToggle } from '@lib/hooks/useToggle'
 import { Circle } from '@components/UI'
 import { useAnimations } from './Header.hooks'
+import useTranslation from 'next-translate/useTranslation'
 
 interface HeaderProps {
   startAnimation?: boolean
@@ -20,26 +21,28 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
     paused: !startAnimation,
   })
 
+  const { t } = useTranslation('home')
+
   return (
     <header tw="my-auto">
       <Container tw="flex flex-col" smaller>
         <h3 ref={h3Ref} tw="text-center md:text-left px-20 lg:px-0">
           <Stroke tw="text-5xl md:text-7xl lg:text-8xl text-white dark:text-black">
-            Hey!
+            {t`header.hello`}
           </Stroke>
         </h3>
         <h1
           ref={h1Ref}
           tw="mx-auto text-7xl md:text-9xl lg:text-10xl text-center"
         >
-          I am <span tw="text-teal-500">Javier</span>
+          {t`header.i-am`}
+          <span tw="text-teal-500"> Javier</span>
         </h1>
         <p
           ref={descriptionRef}
           tw="w-full max-w-md mt-3 mx-auto text-center text-base md:text-xl lg:(mx-0 ml-auto text-right)"
         >
-          A developer who specializes in building <br /> exceptional (and fun!)
-          experiences for the web
+          {t`header.subtitle`}
         </p>
       </Container>
 
@@ -50,8 +53,8 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
             tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-sm sm:text-base md:text-lg lg:text-xl"
             onClick={openModal}
           >
-            Want to talk? <br />
-            <span tw="text-teal-500 font-bold">Send me a message</span>
+            {t`header.question`} <br />
+            <span tw="text-teal-500 font-bold">{t`header.contact-me`}</span>
           </button>
         </Circle>
 

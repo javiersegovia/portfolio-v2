@@ -1,9 +1,14 @@
+import { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import tw from 'twin.macro'
-import { Container } from '../UI/Container'
-import { useAnimations } from './Navbar.hooks'
+
+import useTranslation from 'next-translate/useTranslation'
+import setLanguage from 'next-translate/setLanguage'
+
+import { Container } from '@components/UI/Container'
 import { ThemeButton } from '@components/Button/ThemeButton'
-import { useEffect, useState } from 'react'
+import { useAnimations } from './Navbar.hooks'
+import { ChangeLanguage } from './ChangeLanguage'
 
 const NavItem = tw.li`text-center transition duration-100 hover:text-teal-500 font-sans`
 
@@ -34,6 +39,8 @@ export const Navbar = ({ startAnimation = false }) => {
     delay: 1.5,
   })
 
+  const { t } = useTranslation('common')
+
   return (
     <>
       <nav tw="w-full z-40 bg-white dark:bg-black fixed bottom-0 md:relative">
@@ -43,21 +50,23 @@ export const Navbar = ({ startAnimation = false }) => {
             tw="flex items-center justify-center lg:justify-end pt-5 pb-5 text-lg space-x-4 md:pt-10 md:text-2xl md:space-x-16"
           >
             <NavItem>
-              <a href="#">about me</a>
+              <a href="#">{t('about-me')}</a>
             </NavItem>
             <NavItem>
-              <a href="#">my work</a>
+              <a href="#">{t('my-work')}</a>
             </NavItem>
             {/* TODO: Uncomment when we have the blog */}
             {/* <NavItem>
                 <Link href="/writing">
-                  <a>blog</a>
+                  <a>{t('blog')}</a>
                 </Link>
               </NavItem> */}
             <NavItem>
-              <a href="#">get in touch</a>
+              <a href="#">{t('get-in-touch')}</a>
             </NavItem>
             <ThemeButton />
+
+            <ChangeLanguage />
           </ul>
         </Container>
       </nav>

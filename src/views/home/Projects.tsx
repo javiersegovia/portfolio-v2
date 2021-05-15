@@ -1,6 +1,8 @@
 import { Container, Title } from '@components/UI'
 import { GuyPresenting } from '@components/SVG/GuyPresenting'
 import { ProjectShowcase } from './ProjectShowcase'
+import useTranslation from 'next-translate/useTranslation'
+import Trans from 'next-translate/Trans'
 
 export interface Project {
   title: string
@@ -10,43 +12,20 @@ export interface Project {
   liveUrl?: string
 }
 
-const projects: Project[] = [
-  {
-    title: 'HoyTrabajas',
-    shortDescription:
-      'A colombian-based company that finds the perfect candidate match for hundreds of job offers.',
-    description: [
-      'HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-      'Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-    ],
-    liveUrl: 'https://hoytrabajas.com',
-  },
-  {
-    title: 'Antonio Ecarri',
-    shortDescription: `Promotional page for Antonio Ecarri,
-    President of Alianza del Lápiz
-    President of Fundación Casa Uslar Pietri`,
-    description: [
-      'Ant sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-      'Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-    ],
-  },
-  {
-    title: 'EB2B',
-    shortDescription: `A PaaS built for B2B ecommerce. 
-    Side project still in development.`,
-    description: [
-      'Eb2b sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-      'Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.',
-    ],
-  },
-]
-
 export const Projects = () => {
+  const { t } = useTranslation('home')
+
+  const projects: Project[] = t('recent-work.works', null, {
+    returnObjects: true,
+  })
+
   return (
     <>
       <Title tw="text-center mt-20 mb-10 sm:mt-0 md:mb-0">
-        Recent <span tw="text-teal-500">work</span>
+        <Trans
+          i18nKey="home:recent-work.title"
+          components={[<span key="bold" tw="text-teal-500" />]}
+        />
       </Title>
 
       <Container tw="relative w-full h-auto flex flex-col items-center justify-center md:(flex-row) space-x-5 md:max-w-screen-xl">

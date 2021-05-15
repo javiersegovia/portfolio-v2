@@ -20,6 +20,7 @@ module.exports = {
         orange: colors.orange,
         green: colors.emerald,
         gray: colors.blueGray,
+        dimGray: colors.gray,
         blue: colors.blue,
         teal: colors.teal,
         purple: colors.purple,
