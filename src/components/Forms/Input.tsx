@@ -39,23 +39,35 @@ export const Input = ({
   error,
   ...otherProps
 }: TInputProps) => {
-  const { register } = useFormContext()
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext()
+
+  const fieldError: FieldError | FieldErrors | undefined =
+    error || errors?.[name]
+
   const InputElement = isTextArea ? 'textarea' : 'input'
 
   return (
     <Label htmlFor={name} description={label} tw="block w-full">
       <InputElement
         {...otherProps}
-        ref={register({ ...validations, valueAsNumber: type === 'number' })}
+        {...register(name, {
+          ...validations,
+          valueAsNumber: type === 'number',
+        })}
         id={name}
         name={name}
         type={type}
         placeholder={placeholder}
         rows={3}
-        css={[baseStyles, !!error && errorStyles]}
+        css={[baseStyles, !!fieldError && errorStyles]}
         className={className}
       />
-      {Boolean(validations) && <ErrorMessage>{error?.message}</ErrorMessage>}
+      {Boolean(validations) && (
+        <ErrorMessage>{fieldError?.message}</ErrorMessage>
+      )}
     </Label>
   )
 }

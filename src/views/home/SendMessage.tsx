@@ -2,6 +2,7 @@ import { useForm, FormProvider } from 'react-hook-form'
 import { Input } from '@components/Forms/Input'
 import { Button } from '@components/Button'
 import { CloseButton } from '@components/Button/CloseButton'
+import useTranslation from 'next-translate/useTranslation'
 
 interface MessageForm {
   name: string
@@ -15,7 +16,12 @@ interface SendMessageProps {
 
 export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
   const formMethods = useForm<MessageForm>()
-  const { handleSubmit, errors } = formMethods
+  const {
+    handleSubmit,
+    formState: { errors },
+  } = formMethods
+
+  const { t } = useTranslation('home')
 
   const onSubmit = (data: MessageForm) => {
     // Todo: handle form Data
@@ -31,22 +37,19 @@ export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
       )}
 
       <div tw="text-center mb-10">
-        <h4 tw="text-5xl">Message me</h4>
-        <p tw="text-sm mt-4">
-          Want to say something? I&apos;m glad to hear it!
-        </p>
+        <h4 tw="text-5xl">{t`send-message.title`}</h4>
+        <p tw="text-sm mt-4">{t`send-message.subtitle`}</p>
       </div>
 
       <FormProvider {...formMethods}>
         <form onSubmit={handleSubmit(onSubmit)} tw="space-y-4">
           <Input
             name="name"
-            label="Name"
-            error={errors?.name}
+            label={t`send-message.fields.name.label`}
             validations={{
               required: {
                 value: true,
-                message: 'Who is sending this message?',
+                message: t`send-message.fields.name.required`,
               },
             }}
           />
@@ -54,31 +57,29 @@ export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
           <Input
             name="email"
             type="email"
-            label="Email"
-            error={errors?.email}
+            label={t`send-message.fields.email.label`}
             // TODO: add validations for invalid email address
             validations={{
               required: {
                 value: true,
-                message: 'I will send you the response here!',
+                message: t`send-message.fields.email.required`,
               },
             }}
           />
 
           <Input
             name="message"
-            label="Message"
+            label={t`send-message.fields.message.label`}
             isTextArea
-            error={errors?.message}
             tw="max-h-44"
             validations={{
               required: {
                 value: true,
-                message: 'What do you want to say?',
+                message: t`send-message.fields.message.required`,
               },
               minLength: {
                 value: 10,
-                message: 'Your message should have at least 10 characters',
+                message: t`send-message.fields.message.min-length`,
               },
             }}
           />
@@ -87,7 +88,7 @@ export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
             type="submit"
             tw="rounded-md bg-teal-500 text-white font-bold"
           >
-            Send
+            {t`send-message.submit`}
           </Button>
         </form>
       </FormProvider>

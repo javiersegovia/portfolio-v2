@@ -37,5 +37,25 @@
   "lets-talk": {
     "question": "¿Alguna idea?",
     "call-to-action": "¡Conversemos!"
+  },
+  "send-message": {
+    "title": "Contáctame",
+    "subtitle": "¿Algo que quieras decir? ¡Contento de escucharte!",
+    "submit": "Enviar",
+    "fields": {
+      "name": {
+        "label": "Nombre",
+        "required": "¿Cuál es tu nombre?"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "required": "¿Cuál es tu correo electrónico?"
+      },
+      "message": {
+        "label": "Mensaje",
+        "required": "¿Qué mensaje quieres enviar?",
+        "min-length": "Tu mensaje es muy corto"
+      }
+    }
   }
 }

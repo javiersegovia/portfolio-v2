@@ -37,5 +37,25 @@
   "lets-talk": {
     "question": "Got an idea?",
     "call-to-action": "Let's talk!"
+  },
+  "send-message": {
+    "title": "Message me",
+    "subtitle": "Want to say something? I'm glad to hear it!",
+    "submit": "Send",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "required": "What is your name?"
+      },
+      "email": {
+        "label": "Email",
+        "required": "What is your email?"
+      },
+      "message": {
+        "label": "Message",
+        "required": "What do you want to say?",
+        "min-length": "Sorry. Your message is too short"
+      }
+    }
   }
 }
