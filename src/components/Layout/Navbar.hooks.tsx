@@ -1,12 +1,23 @@
-import { AnimationsFn, useTimeline } from '@lib/hooks/useTimeline'
-import { useRef } from 'react'
+import gsap from 'gsap'
+import { useEffect, useMemo, useRef } from 'react'
 
 type TUseAnimations = (timelineOptions?: gsap.TimelineVars) => any
 
 export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
   const ulRef = useRef<HTMLUListElement>(null)
 
-  const animations: AnimationsFn = (timeline) => {
+  const { paused } = timelineOptions
+
+  const timeline = useMemo(
+    () =>
+      gsap.timeline({
+        delay: 1.2,
+        paused,
+      }),
+    [paused]
+  )
+
+  useEffect(() => {
     const fromTo = {
       from: {
         opacity: 0,
@@ -19,9 +30,7 @@ export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
     }
 
     timeline.fromTo(ulRef.current, fromTo.from, fromTo.to)
-  }
-
-  useTimeline(animations, { ...timelineOptions })
+  }, [timeline])
 
   return {
     ulRef,

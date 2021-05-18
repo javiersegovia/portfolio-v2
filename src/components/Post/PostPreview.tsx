@@ -9,7 +9,7 @@ const PostThumbnail = styled.div<PostThumbnailProps>`
   width: 17.5rem;
 
   // Todo: remove this bg and add the proper img thumbnail
-  background: teal;
+  background: primary;
   clip-path: polygon(0% 1%, 98% 2%, 94% 99%, 4% 99%);
 
   ${(props) =>
@@ -36,7 +36,7 @@ export const PostPreview = ({ post, isOdd }: PostPreviewProps) => {
     <div tw="flex space-x-14">
       <PostThumbnail isOdd={isOdd} />
       <div>
-        <h5 tw="text-xl font-mono font-bold text-teal-500">{post.title}</h5>
+        <h5 tw="text-xl font-mono font-bold text-primary-400">{post.title}</h5>
         <span tw="font-sans text-lg text-gray-500">
           {post.readTime} min read
         </span>

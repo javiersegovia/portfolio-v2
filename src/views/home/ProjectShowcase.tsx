@@ -19,15 +19,12 @@ const StyledWrapper = styled.div`
 `
 
 export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
-  const [
-    isShowcaseOpen,
-    { setTrue: openShowcase, setFalse: closeShowcase },
-  ] = useToggle()
+  const [isShowcaseOpen, { setTrue: show, setFalse: hide }] = useToggle()
 
   return (
     <>
       <StyledWrapper tw="grid gap-5 items-center justify-items-center sm:justify-items-auto">
-        <button type="button" onClick={openShowcase} tw="flex">
+        <button type="button" onClick={show} tw="flex">
           <Circle />
         </button>
         <article
@@ -39,9 +36,7 @@ export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
         </article>
       </StyledWrapper>
 
-      {isShowcaseOpen && (
-        <ProjectModal project={project} closeShowcase={closeShowcase} />
-      )}
+      {isShowcaseOpen && <ProjectModal project={project} hide={hide} />}
     </>
   )
 }

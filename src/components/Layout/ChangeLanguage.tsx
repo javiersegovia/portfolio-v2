@@ -5,22 +5,24 @@ import { Listbox, Transition } from '@headlessui/react'
 
 const locales = ['es', 'en']
 
-export const ChangeLanguage = () => {
+export const ChangeLanguage = ({ ...props }) => {
   const { lang } = useTranslation()
 
   return (
-    <div tw="relative w-10 text-center">
+    <div tw="w-10 text-center relative" {...props}>
       <Listbox
         value={lang}
         onChange={async (value) => await setLanguage(value)}
       >
-        <Listbox.Button>
-          <img
-            src={`/svg/flag-${lang}.svg`}
-            alt="flag"
-            tw="w-6 m-auto rounded-sm object-contain"
-          />
-        </Listbox.Button>
+        <div tw="flex items-center w-full h-full">
+          <Listbox.Button>
+            <img
+              src={`/svg/flag-${lang}.svg`}
+              alt="flag"
+              tw="w-6 m-auto rounded-sm object-contain"
+            />
+          </Listbox.Button>
+        </div>
 
         <Transition
           as={Fragment}
@@ -33,7 +35,7 @@ export const ChangeLanguage = () => {
               <Listbox.Option
                 key={locale}
                 value={locale}
-                tw="hover:(text-blue-900 bg-teal-400 dark:bg-teal-700 cursor-pointer) text-gray-900 cursor-default select-none relative p-2"
+                tw="hover:(text-blue-900 bg-gray-300 dark:bg-gray-600 cursor-pointer) text-gray-900 cursor-default select-none relative p-2"
               >
                 {({ selected }) => (
                   <>

@@ -12,10 +12,8 @@ interface HeaderProps {
 }
 
 export const Header = ({ startAnimation = false }: HeaderProps) => {
-  const [
-    isModalOpen,
-    { setTrue: openModal, setFalse: closeModal },
-  ] = useToggle()
+  const [isModalOpen, { setTrue: openModal, setFalse: closeModal }] =
+    useToggle()
 
   const { h3Ref, h1Ref, descriptionRef } = useAnimations({
     paused: !startAnimation,
@@ -36,7 +34,7 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
           tw="mx-auto text-7xl md:text-9xl lg:text-10xl text-center"
         >
           {t`header.i-am`}
-          <span tw="text-teal-500"> Javier</span>
+          <span tw="text-primary-400"> Javier</span>
         </h1>
         <p
           ref={descriptionRef}
@@ -46,15 +44,15 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
         </p>
       </Container>
 
-      <Container tw="flex justify-center mt-20 lg:mt-0 lg:justify-between items-center">
+      <Container tw="flex justify-center mt-10 md:mt-20 lg:mt-0 lg:justify-between items-center">
         <Circle withAnimation paused={!startAnimation}>
           <button
             type="button"
-            tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-sm sm:text-base md:text-lg lg:text-xl"
+            tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-lg lg:text-xl"
             onClick={openModal}
           >
             {t`header.question`} <br />
-            <span tw="text-teal-500 font-bold">{t`header.contact-me`}</span>
+            <span tw="text-primary-400 font-bold">{t`header.contact-me`}</span>
           </button>
         </Circle>
 
@@ -75,7 +73,7 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
           TODO: uncomment when blog is ready
 
           <div tw="text-right">
-            <p tw="text-teal-500 font-bold text-lg mb-3">
+            <p tw="text-primary-400 font-bold text-lg mb-3">
               ... and I like to write too. My last content:
             </p>
             <RecommendedPost />

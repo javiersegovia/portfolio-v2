@@ -14,24 +14,47 @@ interface IntroPresentationProps {
 }
 
 export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
-  const { screenRef, wrapperRef, introRef } = useIntroAnimations({
+  const {
+    screenRef,
+    wrapperDesktopRef,
+    wrapperMobileRef,
+    introDesktopRef,
+    introMobileRef,
+  } = useIntroAnimations({
     onComplete,
   })
 
   return (
     <FullScreen
       sectionRef={screenRef}
-      tw="fixed top-0 left-0 right-0 bottom-0 bg-teal-500 z-50 flex"
+      tw="fixed top-0 left-0 right-0 bottom-0 dark:bg-black bg-primary-400 z-50 flex h-full"
     >
       <div
-        ref={wrapperRef}
-        tw="relative leading-10 m-auto w-full h-40 text-center"
+        ref={wrapperDesktopRef}
+        tw="relative m-auto w-full h-40 text-center hidden md:block"
       >
         {words.map((word) => (
           <h2
-            ref={(el) => introRef.current?.push(el as HTMLHeadingElement)}
+            ref={(el) =>
+              introDesktopRef.current?.push(el as HTMLHeadingElement)
+            }
             key={word}
-            className="text-10xl left-0 right-0 text-center m-auto text-white"
+            tw="text-10xl w-full left-0 right-0 text-center m-auto text-black dark:text-primary-400"
+          >
+            {word}
+          </h2>
+        ))}
+      </div>
+
+      <div
+        ref={wrapperMobileRef}
+        tw="relative m-auto w-full h-40 lg:h-40 text-center block md:hidden"
+      >
+        {words.map((word) => (
+          <h2
+            ref={(el) => introMobileRef.current?.push(el as HTMLHeadingElement)}
+            key={word}
+            tw="text-5xl w-full left-0 right-0 text-center m-auto text-black dark:text-primary-400"
           >
             {word}
           </h2>

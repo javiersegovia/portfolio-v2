@@ -6,17 +6,22 @@ import { useTimeline } from '@lib/hooks/useTimeline'
 type TUseAnimations = (timelineOptions?: gsap.TimelineVars) => any
 
 export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
-  const introRef = useRef<HTMLHeadingElement[]>([])
-  const wrapperRef = useRef<HTMLDivElement>(null)
+  const introDesktopRef = useRef<HTMLHeadingElement[]>([])
+  const wrapperDesktopRef = useRef<HTMLDivElement>(null)
+
+  const introMobileRef = useRef<HTMLHeadingElement[]>([])
+  const wrapperMobileRef = useRef<HTMLDivElement>(null)
+
   const screenRef = useRef<HTMLDivElement>(null)
 
-  const animations = (timeline: gsap.core.Timeline) => {
-    const wordsEl = introRef.current
-    const wrapperEl = wrapperRef.current
+  const desktopAnimations = (timeline: gsap.core.Timeline) => {
+    const wordsElementsDesktop = introDesktopRef.current
+    const wrapperElementsDesktop = wrapperDesktopRef.current
+
     const screenEl = screenRef.current
 
-    wordsEl.forEach((word, i) => {
-      const isLast = i === wordsEl.length - 1
+    wordsElementsDesktop.forEach((word, i) => {
+      const isLast = i === wordsElementsDesktop.length - 1
 
       if (isLast) {
         timeline.fromTo(
@@ -59,7 +64,7 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
         )
 
         timeline.to(
-          wrapperEl,
+          wrapperElementsDesktop,
           {
             duration: 0.15,
             yPercent: i * -110,
@@ -69,14 +74,14 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
       }
     })
 
-    timeline.to(wrapperEl, {
+    timeline.to(wrapperElementsDesktop, {
       duration: 0,
       overflow: 'visible',
       delay: 0,
     })
 
     timeline.to(
-      wrapperEl,
+      wrapperElementsDesktop,
       {
         skewY: 0,
         skewX: 0,
@@ -99,11 +104,106 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
     )
   }
 
-  useTimeline(animations, { delay: 1, ...timelineOptions })
+  const mobileAnimations = (timeline: gsap.core.Timeline) => {
+    const wordsElementsMobile = introMobileRef.current
+    const wrapperElementsMobile = wrapperMobileRef.current
+
+    const screenEl = screenRef.current
+
+    wordsElementsMobile.forEach((word, i) => {
+      const isLast = i === wordsElementsMobile.length - 1
+
+      const fontSize = 40 + i * 4
+
+      if (isLast) {
+        timeline.fromTo(
+          word,
+          {
+            yPercent: 0,
+            fontSize: 0,
+            delay: 0,
+            skewX: 0,
+            skewY: 0,
+          },
+          {
+            fontSize,
+            duration: 1,
+            yPercent: 0,
+            delay: 0,
+            skewX: 10,
+            skewY: 20,
+            ease: 'elastic',
+          }
+        )
+      } else {
+        timeline.fromTo(
+          word,
+          {
+            fontSize: 0,
+            yPercent: 0,
+            skewX: 0,
+            skewY: 0,
+          },
+          {
+            skewX: 7.5,
+            skewY: 20,
+            yPercent: 0,
+            fontSize,
+            duration: 0.35,
+            delay: 0.25,
+            ease: 'back',
+          }
+        )
+
+        timeline.to(
+          wrapperElementsMobile,
+          {
+            duration: 0.15,
+            yPercent: i * -40,
+          },
+          `+=${i * 0.05}`
+        )
+      }
+    })
+
+    timeline.to(wrapperElementsMobile, {
+      duration: 0,
+      overflow: 'visible',
+      delay: 0,
+    })
+
+    timeline.to(
+      wrapperElementsMobile,
+      {
+        skewY: 0,
+        skewX: 0,
+        scale: 10,
+        duration: 1,
+        delay: 0,
+        opacity: 0,
+      },
+      `outAnimation`
+    )
+
+    timeline.to(
+      screenEl,
+      {
+        opacity: 0,
+        display: 'none',
+        delay: 0,
+      },
+      `outAnimation+=0.25`
+    )
+  }
+
+  useTimeline(desktopAnimations, { delay: 1, ...timelineOptions })
+  useTimeline(mobileAnimations, { delay: 1, ...timelineOptions })
 
   return {
-    introRef,
-    wrapperRef,
+    introDesktopRef,
+    wrapperDesktopRef,
+    introMobileRef,
+    wrapperMobileRef,
     screenRef,
   }
 }

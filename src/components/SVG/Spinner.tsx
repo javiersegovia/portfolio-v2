@@ -10,7 +10,7 @@ export const Spinner = ({ size = 6, color = 'white' }) => {
       tw="text-black"
       css={[
         color === 'white' && tw`text-white`,
-        color === 'teal' && tw`text-teal-500`,
+        color === 'primary' && tw`text-primary-400`,
         size === 6 && tw`h-6 w-6`,
         size === 7 && tw`h-7 w-7`,
         size === 8 && tw`h-8 w-8`,

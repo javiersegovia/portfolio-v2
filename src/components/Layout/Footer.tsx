@@ -1,18 +1,28 @@
 import _tw from 'twin.macro'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { constants } from '@lib/utils/constants'
 
 // todo: move personal data to ENV
 
+const { linkedinProfile, githubProfile, contactEmail } = constants
+
 export const Footer = () => {
   return (
-    <footer tw="w-full flex bg-teal-500 text-white dark:text-black font-bold text-lg py-12">
+    <footer tw="w-full flex bg-primary-400 text-black font-bold text-lg py-12">
       <div tw="space-y-2 mx-auto text-center">
-        <ul tw="flex mx-auto space-x-4">
-          <li>Icon 1</li>
-          <li>Icon 2</li>
-          <li>Icon 3</li>
+        <ul tw="flex mx-auto space-x-4 text-3xl justify-center mb-2">
+          <li>
+            <a href={linkedinProfile} target="_blank" rel="noreferrer">
+              <FaLinkedinIn />
+            </a>
+          </li>
+          <li>
+            <a href={githubProfile} target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+          </li>
         </ul>
-        <p>hey@sjavier.com</p>
-        <p>+58 9999 153</p>
+        <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
       </div>
     </footer>
   )

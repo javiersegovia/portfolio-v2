@@ -39,7 +39,7 @@ export const Circle = ({
           r="48%"
           strokeDasharray={`${withAnimation ? progress : 1000}, 1000`}
           strokeDashoffset={`${withAnimation ? progress : 1000}, 1000`}
-          stroke="#00BA82"
+          stroke="#ECB21D"
         />
         <circle
           cx="51%"

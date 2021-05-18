@@ -25,6 +25,10 @@ module.exports = {
         teal: colors.teal,
         purple: colors.purple,
         almostBlack: '#131313',
+        primary: {
+          ...colors.amber,
+          400: '#ECBE1D',
+        },
       },
     },
     fontFamily: {

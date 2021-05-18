@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom'
 import tw from 'twin.macro'
 
 import useTranslation from 'next-translate/useTranslation'
-import setLanguage from 'next-translate/setLanguage'
 
 import { Container } from '@components/UI/Container'
 import { ThemeButton } from '@components/Button/ThemeButton'
 import { useAnimations } from './Navbar.hooks'
 import { ChangeLanguage } from './ChangeLanguage'
 
-const NavItem = tw.li`text-center transition duration-100 hover:text-teal-500 font-sans`
+const NavItem = tw.li`text-center transition duration-100 hover:text-primary-400 font-sans lowercase`
 
 const BottomSpacer = () => {
   const [container, setContainer] = useState<HTMLDivElement>()
@@ -27,7 +26,7 @@ const BottomSpacer = () => {
 
   return container
     ? ReactDOM.createPortal(
-        <div id="spacer" tw="pb-16 bg-red-500 block sm:hidden" />,
+        <div id="spacer" tw="pb-12 bg-white block sm:hidden" />,
         container
       )
     : null
@@ -36,18 +35,24 @@ const BottomSpacer = () => {
 export const Navbar = ({ startAnimation = false }) => {
   const { ulRef } = useAnimations({
     paused: !startAnimation,
-    delay: 1.5,
   })
 
   const { t } = useTranslation('common')
 
   return (
     <>
+      <div tw="md:hidden fixed top-0 flex justify-end items-center w-full z-40 bg-white dark:bg-black py-3 px-5 space-x-6">
+        <ThemeButton />
+        <ChangeLanguage />
+      </div>
+
+      <div tw="block md:hidden h-11" />
+
       <nav tw="w-full z-40 bg-white dark:bg-black fixed bottom-0 md:relative">
         <Container>
           <ul
             ref={ulRef}
-            tw="flex items-center justify-center lg:justify-end pt-5 pb-5 text-lg space-x-4 md:pt-10 md:text-2xl md:space-x-16"
+            tw="flex items-center justify-center lg:justify-end py-3 text-lg space-x-4 md:pt-10 md:text-2xl md:space-x-16"
           >
             <NavItem>
               <a href="#">{t('about-me')}</a>
@@ -64,9 +69,9 @@ export const Navbar = ({ startAnimation = false }) => {
             <NavItem>
               <a href="#">{t('get-in-touch')}</a>
             </NavItem>
-            <ThemeButton />
 
-            <ChangeLanguage />
+            <ThemeButton tw="hidden md:block" />
+            <ChangeLanguage tw="hidden md:block" />
           </ul>
         </Container>
       </nav>

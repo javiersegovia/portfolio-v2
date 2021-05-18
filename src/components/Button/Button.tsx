@@ -40,8 +40,7 @@ export const Button = ({
 
         disabled && _tw`opacity-40 cursor-not-allowed`,
 
-        isPrimary && _tw`transform active:scale-95 bg-teal-500 text-white`,
-        isPrimary && !disabled && _tw`hover:bg-teal-600`,
+        isPrimary && _tw`transform active:scale-95 bg-primary-400 text-white`,
 
         isSuccess && _tw`transform active:scale-95 bg-green-400 text-white`,
         isSuccess && !disabled && _tw`hover:bg-green-600`,

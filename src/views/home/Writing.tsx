@@ -57,7 +57,7 @@ export const Writing = ({ limit }: WritingProps) => {
       <div tw="mt-20 mx-auto">
         <Circle size={130}>
           <button
-            tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-teal-500 font-bold"
+            tw="w-full h-full flex items-center justify-center flex-col z-10 cursor-pointer font-mono text-primary-400 font-bold"
             // Todo: redirect to articles list here
             onClick={() => alert('hello')}
           >

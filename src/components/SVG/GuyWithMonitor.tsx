@@ -28,7 +28,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                         stroke="#00B981"
                         strokeWidth="2"
                         className="svgElement"
-                        tw="stroke-current text-teal-500"
+                        tw="stroke-current text-primary-400"
                         mask="url(#guy-monitor-path-1-inside-1)"
                       />
                     </g>
@@ -47,7 +47,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                         stroke="#00B981"
                         strokeWidth="2"
                         className="svgElement"
-                        tw="stroke-current text-teal-500"
+                        tw="stroke-current text-primary-400"
                         mask="url(#guy-monitor-path-2-inside-2)"
                       />
                     </g>
@@ -65,7 +65,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-3-inside-3)"
                     />
                   </g>
@@ -84,7 +84,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-4-inside-4)"
                     />
                   </g>
@@ -101,7 +101,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-5-inside-5)"
                     />
                   </g>
@@ -118,7 +118,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-6-inside-6)"
                     />
                   </g>
@@ -135,7 +135,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-7-inside-7)"
                     />
                   </g>
@@ -152,7 +152,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-8-inside-8)"
                     />
                   </g>
@@ -169,7 +169,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-9-inside-9)"
                     />
                   </g>
@@ -186,7 +186,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-10-inside-10)"
                     />
                   </g>
@@ -203,7 +203,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-11-inside-11)"
                     />
                   </g>
@@ -220,7 +220,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-12-inside-12)"
                     />
                   </g>
@@ -237,7 +237,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-13-inside-13)"
                     />
                   </g>
@@ -254,7 +254,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-14-inside-14)"
                     />
                   </g>
@@ -271,7 +271,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-15-inside-15)"
                     />
                   </g>
@@ -288,7 +288,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-16-inside-16)"
                     />
                   </g>
@@ -305,7 +305,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-17-inside-17)"
                     />
                   </g>
@@ -322,7 +322,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-18-inside-18)"
                     />
                   </g>
@@ -339,7 +339,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-19-inside-19)"
                     />
                   </g>
@@ -356,7 +356,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-20-inside-20)"
                     />
                   </g>
@@ -373,7 +373,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-21-inside-21)"
                     />
                   </g>
@@ -390,7 +390,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-22-inside-22)"
                     />
                   </g>
@@ -403,7 +403,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-23-inside-23)"
                     />
                   </g>
@@ -416,7 +416,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-24-inside-24)"
                     />
                   </g>
@@ -429,7 +429,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-25-inside-25)"
                     />
                   </g>
@@ -442,7 +442,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-26-inside-26)"
                     />
                   </g>
@@ -455,7 +455,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-27-inside-27)"
                     />
                   </g>
@@ -468,7 +468,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-28-inside-28)"
                     />
                   </g>
@@ -481,7 +481,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-29-inside-29)"
                     />
                   </g>
@@ -494,7 +494,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-30-inside-30)"
                     />
                   </g>
@@ -507,7 +507,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-31-inside-31)"
                     />
                   </g>
@@ -520,7 +520,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-32-inside-32)"
                     />
                   </g>
@@ -533,7 +533,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-33-inside-33)"
                     />
                   </g>
@@ -546,7 +546,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-34-inside-34)"
                     />
                   </g>
@@ -559,7 +559,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-35-inside-35)"
                     />
                   </g>
@@ -572,7 +572,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-36-inside-36)"
                     />
                   </g>
@@ -585,7 +585,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-37-inside-37)"
                     />
                   </g>
@@ -598,7 +598,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-38-inside-38)"
                     />
                   </g>
@@ -611,7 +611,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-39-inside-39)"
                     />
                   </g>
@@ -624,7 +624,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-40-inside-40)"
                     />
                   </g>
@@ -637,7 +637,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-41-inside-41)"
                     />
                   </g>
@@ -650,7 +650,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-42-inside-42)"
                     />
                   </g>
@@ -663,7 +663,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-43-inside-43)"
                     />
                   </g>
@@ -676,7 +676,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-44-inside-44)"
                     />
                   </g>
@@ -689,7 +689,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-45-inside-45)"
                     />
                   </g>
@@ -702,7 +702,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-46-inside-46)"
                     />
                   </g>
@@ -715,7 +715,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-47-inside-47)"
                     />
                   </g>
@@ -730,7 +730,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-48-inside-48)"
                     />
                   </g>
@@ -743,7 +743,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-49-inside-49)"
                     />
                   </g>
@@ -756,7 +756,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-50-inside-50)"
                     />
                   </g>
@@ -769,7 +769,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-51-inside-51)"
                     />
                   </g>
@@ -782,7 +782,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-52-inside-52)"
                     />
                   </g>
@@ -795,7 +795,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-53-inside-53)"
                     />
                   </g>
@@ -808,7 +808,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-54-inside-54)"
                     />
                   </g>
@@ -821,7 +821,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-55-inside-55)"
                     />
                   </g>
@@ -834,7 +834,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-56-inside-56)"
                     />
                   </g>
@@ -847,7 +847,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-57-inside-57)"
                     />
                   </g>
@@ -860,7 +860,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-58-inside-58)"
                     />
                   </g>
@@ -873,7 +873,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-59-inside-59)"
                     />
                   </g>
@@ -886,7 +886,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-60-inside-60)"
                     />
                   </g>
@@ -899,7 +899,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-61-inside-61)"
                     />
                   </g>
@@ -912,7 +912,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-62-inside-62)"
                     />
                   </g>
@@ -925,7 +925,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-63-inside-63)"
                     />
                   </g>
@@ -938,7 +938,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-64-inside-64)"
                     />
                   </g>
@@ -951,7 +951,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-65-inside-65)"
                     />
                   </g>
@@ -964,7 +964,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-66-inside-66)"
                     />
                   </g>
@@ -977,7 +977,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-67-inside-67)"
                     />
                   </g>
@@ -990,7 +990,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-68-inside-68)"
                     />
                   </g>
@@ -1003,7 +1003,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-69-inside-69)"
                     />
                   </g>
@@ -1016,7 +1016,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-70-inside-70)"
                     />
                   </g>
@@ -1029,7 +1029,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-71-inside-71)"
                     />
                   </g>
@@ -1042,7 +1042,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-72-inside-72)"
                     />
                   </g>
@@ -1055,7 +1055,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-73-inside-73)"
                     />
                   </g>
@@ -1068,7 +1068,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-74-inside-74)"
                     />
                   </g>
@@ -1081,7 +1081,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-75-inside-75)"
                     />
                   </g>
@@ -1094,7 +1094,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-76-inside-76)"
                     />
                   </g>
@@ -1107,7 +1107,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-77-inside-77)"
                     />
                   </g>
@@ -1120,7 +1120,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-78-inside-78)"
                     />
                   </g>
@@ -1133,7 +1133,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-79-inside-79)"
                     />
                   </g>
@@ -1146,7 +1146,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-80-inside-80)"
                     />
                   </g>
@@ -1159,7 +1159,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-81-inside-81)"
                     />
                   </g>
@@ -1172,7 +1172,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-82-inside-82)"
                     />
                   </g>
@@ -1185,7 +1185,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-83-inside-83)"
                     />
                   </g>
@@ -1198,7 +1198,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-84-inside-84)"
                     />
                   </g>
@@ -1211,7 +1211,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-85-inside-85)"
                     />
                   </g>
@@ -1224,7 +1224,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-86-inside-86)"
                     />
                   </g>
@@ -1237,7 +1237,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-87-inside-87)"
                     />
                   </g>
@@ -1250,7 +1250,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-88-inside-88)"
                     />
                   </g>
@@ -1263,7 +1263,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-89-inside-89)"
                     />
                   </g>
@@ -1276,7 +1276,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-90-inside-90)"
                     />
                   </g>
@@ -1292,7 +1292,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                         stroke="#00B981"
                         strokeWidth="2"
                         className="svgElement"
-                        tw="stroke-current text-teal-500"
+                        tw="stroke-current text-primary-400"
                         mask="url(#guy-monitor-path-91-inside-91)"
                       />
                     </g>
@@ -1306,7 +1306,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-92-inside-92)"
                     />
                   </g>
@@ -1319,7 +1319,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-93-inside-93)"
                     />
                   </g>
@@ -1332,7 +1332,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-94-inside-94)"
                     />
                   </g>
@@ -1345,7 +1345,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-95-inside-95)"
                     />
                   </g>
@@ -1358,7 +1358,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-96-inside-96)"
                     />
                   </g>
@@ -1371,7 +1371,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-97-inside-97)"
                     />
                   </g>
@@ -1384,7 +1384,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-98-inside-98)"
                     />
                   </g>
@@ -1397,7 +1397,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-99-inside-99)"
                     />
                   </g>
@@ -1410,7 +1410,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-100-inside-100)"
                     />
                   </g>
@@ -1423,7 +1423,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-101-inside-101)"
                     />
                   </g>
@@ -1436,7 +1436,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-102-inside-102)"
                     />
                   </g>
@@ -1449,7 +1449,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-103-inside-103)"
                     />
                   </g>
@@ -1462,7 +1462,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-104-inside-104)"
                     />
                   </g>
@@ -1475,7 +1475,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-105-inside-105)"
                     />
                   </g>
@@ -1489,7 +1489,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                     stroke="#00B981"
                     strokeWidth="2"
                     className="svgElement"
-                    tw="stroke-current text-teal-500"
+                    tw="stroke-current text-primary-400"
                     mask="url(#guy-monitor-path-106-inside-106)"
                   />
                 </g>
@@ -1503,7 +1503,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-107-inside-107)"
                     />
                   </g>
@@ -1516,7 +1516,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-108-inside-108)"
                     />
                   </g>
@@ -1529,7 +1529,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-109-inside-109)"
                     />
                   </g>
@@ -1542,7 +1542,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-110-inside-110)"
                     />
                   </g>
@@ -1555,7 +1555,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-111-inside-111)"
                     />
                   </g>
@@ -1568,7 +1568,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-112-inside-112)"
                     />
                   </g>
@@ -1581,7 +1581,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-113-inside-113)"
                     />
                   </g>
@@ -1594,7 +1594,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-114-inside-114)"
                     />
                   </g>
@@ -1607,7 +1607,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-115-inside-115)"
                     />
                   </g>
@@ -1620,7 +1620,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-116-inside-116)"
                     />
                   </g>
@@ -1633,7 +1633,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-117-inside-117)"
                     />
                   </g>
@@ -1646,7 +1646,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-118-inside-118)"
                     />
                   </g>
@@ -1659,7 +1659,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-119-inside-119)"
                     />
                   </g>
@@ -1672,7 +1672,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-120-inside-120)"
                     />
                   </g>
@@ -1685,7 +1685,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-121-inside-121)"
                     />
                   </g>
@@ -1698,7 +1698,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-122-inside-122)"
                     />
                   </g>
@@ -1711,7 +1711,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-123-inside-123)"
                     />
                   </g>
@@ -1724,7 +1724,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-124-inside-124)"
                     />
                   </g>
@@ -1737,7 +1737,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-125-inside-125)"
                     />
                   </g>
@@ -1750,7 +1750,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-126-inside-126)"
                     />
                   </g>
@@ -1763,7 +1763,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-127-inside-127)"
                     />
                   </g>
@@ -1776,7 +1776,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-128-inside-128)"
                     />
                   </g>
@@ -1789,7 +1789,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-129-inside-129)"
                     />
                   </g>
@@ -1802,7 +1802,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-130-inside-130)"
                     />
                   </g>
@@ -1815,7 +1815,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-131-inside-131)"
                     />
                   </g>
@@ -1828,7 +1828,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-132-inside-132)"
                     />
                   </g>
@@ -1841,7 +1841,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-133-inside-133)"
                     />
                   </g>
@@ -1854,7 +1854,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-134-inside-134)"
                     />
                   </g>
@@ -1867,7 +1867,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-135-inside-135)"
                     />
                   </g>
@@ -1880,7 +1880,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-136-inside-136)"
                     />
                   </g>
@@ -1893,7 +1893,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-137-inside-137)"
                     />
                   </g>
@@ -1906,7 +1906,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-138-inside-138)"
                     />
                   </g>
@@ -1919,7 +1919,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-139-inside-139)"
                     />
                   </g>
@@ -1932,7 +1932,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-140-inside-140)"
                     />
                   </g>
@@ -1945,7 +1945,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-141-inside-141)"
                     />
                   </g>
@@ -1958,7 +1958,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-142-inside-142)"
                     />
                   </g>
@@ -1971,7 +1971,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-143-inside-143)"
                     />
                   </g>
@@ -1984,7 +1984,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-144-inside-144)"
                     />
                   </g>
@@ -1997,7 +1997,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-145-inside-145)"
                     />
                   </g>
@@ -2010,7 +2010,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-146-inside-146)"
                     />
                   </g>
@@ -2023,7 +2023,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-147-inside-147)"
                     />
                   </g>
@@ -2036,7 +2036,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-148-inside-148)"
                     />
                   </g>
@@ -2049,7 +2049,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-149-inside-149)"
                     />
                   </g>
@@ -2065,7 +2065,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                         stroke="#00B981"
                         strokeWidth="2"
                         className="svgElement"
-                        tw="stroke-current text-teal-500"
+                        tw="stroke-current text-primary-400"
                         mask="url(#guy-monitor-path-150-inside-150)"
                       />
                     </g>
@@ -2079,7 +2079,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-151-inside-151)"
                     />
                   </g>
@@ -2092,7 +2092,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-152-inside-152)"
                     />
                   </g>
@@ -2105,7 +2105,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-153-inside-153)"
                     />
                   </g>
@@ -2118,7 +2118,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-154-inside-154)"
                     />
                   </g>
@@ -2131,7 +2131,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-155-inside-155)"
                     />
                   </g>
@@ -2144,7 +2144,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-156-inside-156)"
                     />
                   </g>
@@ -2157,7 +2157,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-157-inside-157)"
                     />
                   </g>
@@ -2170,7 +2170,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-158-inside-158)"
                     />
                   </g>
@@ -2183,7 +2183,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-159-inside-159)"
                     />
                   </g>
@@ -2196,7 +2196,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-160-inside-160)"
                     />
                   </g>
@@ -2209,7 +2209,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-161-inside-161)"
                     />
                   </g>
@@ -2222,7 +2222,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-162-inside-162)"
                     />
                   </g>
@@ -2235,7 +2235,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-163-inside-163)"
                     />
                   </g>
@@ -2248,7 +2248,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-164-inside-164)"
                     />
                   </g>
@@ -2261,7 +2261,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-165-inside-165)"
                     />
                   </g>
@@ -2274,7 +2274,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-166-inside-166)"
                     />
                   </g>
@@ -2287,7 +2287,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-167-inside-167)"
                     />
                   </g>
@@ -2300,7 +2300,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-168-inside-168)"
                     />
                   </g>
@@ -2313,7 +2313,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-169-inside-169)"
                     />
                   </g>
@@ -2326,7 +2326,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-170-inside-170)"
                     />
                   </g>
@@ -2339,7 +2339,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-171-inside-171)"
                     />
                   </g>
@@ -2352,7 +2352,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-172-inside-172)"
                     />
                   </g>
@@ -2365,7 +2365,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-173-inside-173)"
                     />
                   </g>
@@ -2379,7 +2379,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                     stroke="#00B981"
                     strokeWidth="2"
                     className="svgElement"
-                    tw="stroke-current text-teal-500"
+                    tw="stroke-current text-primary-400"
                     mask="url(#guy-monitor-path-174-inside-174)"
                   />
                 </g>
@@ -2392,7 +2392,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                     stroke="#00B981"
                     strokeWidth="2"
                     className="svgElement"
-                    tw="stroke-current text-teal-500"
+                    tw="stroke-current text-primary-400"
                     mask="url(#guy-monitor-path-175-inside-175)"
                   />
                 </g>
@@ -2406,7 +2406,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-176-inside-176)"
                     />
                   </g>
@@ -2419,7 +2419,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-177-inside-177)"
                     />
                   </g>
@@ -2432,7 +2432,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-178-inside-178)"
                     />
                   </g>
@@ -2447,7 +2447,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-179-inside-179)"
                     />
                   </g>
@@ -2460,7 +2460,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       stroke="#00B981"
                       strokeWidth="2"
                       className="svgElement"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-180-inside-180)"
                     />
                   </g>
@@ -2472,7 +2472,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M88.3661 412.223H81.5522V416.487H88.3661V412.223Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-181-inside-181)"
                     />
                   </g>
@@ -2486,7 +2486,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M167.363 435.251H159.91V439.515H167.363V435.251Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-182-inside-182)"
                     />
                   </g>
@@ -2498,7 +2498,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M163.316 428.215H159.91V432.479H163.316V428.215Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-183-inside-183)"
                     />
                   </g>
@@ -2510,7 +2510,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M172.259 435.251H168.853V439.515H172.259V435.251Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-184-inside-184)"
                     />
                   </g>
@@ -2522,7 +2522,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M167.363 420.966H159.91V425.23H167.363V420.966Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-185-inside-185)"
                     />
                   </g>
@@ -2534,7 +2534,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M168.853 413.929H159.91V418.193H168.853V413.929Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-186-inside-186)"
                     />
                   </g>
@@ -2548,7 +2548,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M278.725 435.89H272.55V440.155H278.725V435.89Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-187-inside-187)"
                     />
                   </g>
@@ -2560,7 +2560,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M278.725 428.641H271.272V432.905H278.725V428.641Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-188-inside-188)"
                     />
                   </g>
@@ -2572,7 +2572,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M269.143 428.641H264.245V432.905H269.143V428.641Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-189-inside-189)"
                     />
                   </g>
@@ -2584,7 +2584,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                       d="M278.724 421.604H267.226V425.869H278.724V421.604Z"
                       stroke="#00B981"
                       strokeWidth="2"
-                      tw="stroke-current text-teal-500"
+                      tw="stroke-current text-primary-400"
                       mask="url(#guy-monitor-path-190-inside-190)"
                     />
                   </g>
@@ -2597,7 +2597,7 @@ export const GuyWithMonitor = ({ ...props }) => {
                     d="M386.893 389.196H383.487V394.1H378.589V397.511H383.486V402.415H386.892V397.511H391.79V394.1H386.892L386.893 389.196Z"
                     stroke="#00B981"
                     strokeWidth="2"
-                    tw="stroke-current text-teal-500"
+                    tw="stroke-current text-primary-400"
                     mask="url(#guy-monitor-path-191-inside-191)"
                   />
                 </g>

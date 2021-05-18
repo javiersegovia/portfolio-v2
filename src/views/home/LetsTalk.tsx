@@ -32,7 +32,7 @@ export const LetsTalk = () => {
                   {t`lets-talk.question`} <br />
                   <button
                     type="button"
-                    tw="cursor-pointer text-7xl text-teal-500 mt-10 underline leading-tight"
+                    tw="cursor-pointer text-7xl text-primary-400 mt-10 underline leading-tight"
                     css={[lang === 'es' && tw`text-3xl`]}
                     onClick={openForm}
                   >

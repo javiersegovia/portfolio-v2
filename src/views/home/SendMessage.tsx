@@ -16,10 +16,7 @@ interface SendMessageProps {
 
 export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
   const formMethods = useForm<MessageForm>()
-  const {
-    handleSubmit,
-    formState: { errors },
-  } = formMethods
+  const { handleSubmit } = formMethods
 
   const { t } = useTranslation('home')
 
@@ -86,7 +83,7 @@ export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
 
           <Button
             type="submit"
-            tw="rounded-md bg-teal-500 text-white font-bold"
+            tw="rounded-md bg-primary-400 text-black font-bold"
           >
             {t`send-message.submit`}
           </Button>

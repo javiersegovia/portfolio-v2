@@ -16,7 +16,7 @@ export const Phone = ({ ...props }) => {
   }
 
   const phoneBGStyles = css`
-    fill: ${theme`colors.gray.300`};
+    fill: ${theme`colors.gray.200`};
     opacity: ${(progress / 500) | 0};
 
     .dark & {
