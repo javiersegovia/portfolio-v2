@@ -25,8 +25,15 @@ export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
     <>
       <StyledWrapper tw="grid gap-5 items-center justify-items-center sm:justify-items-auto">
         <button type="button" onClick={show} tw="flex">
-          <Circle />
+          <Circle tw="p-10">
+            <img
+              src={`/img/logo-${project.title.toLowerCase()}.png`}
+              tw="object-contain"
+              alt="Project icon"
+            />
+          </Circle>
         </button>
+
         <article
           tw="text-center md:text-left"
           css={[isOdd && tw`md:row-start-1 md:text-right`]}

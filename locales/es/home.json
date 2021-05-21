@@ -1,36 +1,66 @@
 {
+  "intro-words": [
+    "innovación",
+    "minimalismo",
+    "tecnología",
+    "progreso",
+    "creatividad"
+  ],
   "header": {
-    "hello": "Hola!",
+    "hello": "Crea. Innova. Mejora.",
     "i-am": "Soy",
-    "subtitle": "Un desarrollador Full Stack especialista en construir experiencias excepcionales para la web",
+    "subtitle": "Un desarrollador full-stack especialista en construir experiencias excepcionales para la web",
     "question": "¿Quieres hablar?",
-    "contact-me": "Contáctame"
+    "contact-me": "Contactame"
   },
   "who-am-i": {
     "title": "Sobre <0> mi</0>",
-    "content-1": "Mi nombre es Javier Segovia, un placer. Soy un desarrollador de {{age}} años que vive en Caracas, Venezuela.",
-    "content-2": "En 2016, I started my career as a developer without even realizing it. I tried to build a web page with basic HTML, CSS and Javascript just as a hobby. I found out that programming was actually fun. So I kept learning, practicing, and hacking things.",
-    "content-3": "Since then, I’ve had diverse experiences in the development world: from working with multiple clients as an indie freelancer, to be part of a whole team of amazing developers following an agile methodology.",
-    "content-4": "Today, these are some of the tools that I have experience with:"
+    "content-1": "Mi nombre es Javier Segovia. Soy un desarrollador full-stack de {{age}} años que disfruta colaborar con distintos equipos alrededor del mundo.",
+    "content-2": "Trabajo como desarrollador desde 2016, cuando por simple curiosidad creé mi primera página web. Me pareció divertido, así que investigué para aprender más del tema.",
+    "content-3": "Desde entonces, me he enfocado en pulir mis habilidades como desarrollador, aprendiendo nuevas tecnologías y colaborando con distintos equipos para crear sitios y aplicaciones web tan útiles como interesantes.",
+    "content-4": "A día de hoy, estas son algunas de las tecnologías y herramientas que manejo:"
   },
-  "recent-work": {
+  "my-work": {
     "title": "Proyectos <0>recientes</0>",
+    "live-url": "Sitio web:",
+    "git-url": "Código fuente:",
+    "technologies": "Tecnologías utilizadas:",
     "works": [
       {
         "title": "HoyTrabajas",
-        "shortDescription": "Startup colombiana de reclutamiento basado en tecnología",
+        "liveUrl": "https://hoytrabajas.com",
+        "shortDescription": "Startup de reclutamiento que busca el match ideal para candidatos y ofertas de trabajo",
         "description": [
-          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
-          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
-        ]
+          "Trabajé como desarrollador full-stack en múltiples funcionalidades de la plataforma, que van desde la maquetación de la interfaz y la interacción del usuario, hasta el manejo de la base de datos y la implementación de servicios."
+        ],
+        "techUsed": "HAML, SASS, JavaScript, React, Ruby on Rails, RSpec, Docker, Elasticsearch, PostgreSQL"
       },
       {
-        "title": "Ecommerce Boilerplate",
-        "shortDescription": "Proyecto personal. Ecommerce con múltiples funcionalidades.",
+        "title": "GoShop",
+        "liveUrl": "https://www.goshop.com.do/",
+        "shortDescription": "Plataforma para crear tiendas en línea",
         "description": [
-          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
-          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
-        ]
+          "Trabajé como freelancer en la implementación de temas para tiendas personalizadas de la plataforma, realizando ajustes visuales y técnicos en cuanto a las funcionalidades particulares de cada tema en cuestión."
+        ],
+        "techUsed": "HAML, SASS, Ruby on Rails, RSpec, PostgreSQL"
+      },
+      {
+        "title": "Slatam",
+        "gitUrl": "https://github.com/javiersegovia/slatam-ts",
+        "shortDescription": "Plataforma de comercio B2B (en desarrollo)",
+        "description": [
+          "Slatam es un proyecto en desarrollo que me ha servido para probar cómo distintas herramientas del ecosistema de JavaScript pueden funcionar en conjunto. Trabajo en ella en mi tiempo libre y, en un futuro, el objetivo es que se convierta en una plataforma de comercio orientado al B2B."
+        ],
+        "techUsed": "HTML, TypeScript, React, NextJS, Styled Components, Tailwind, GraphQL, NestJS, NodeJS, PostgreSQL, Docker"
+      },
+      {
+        "title": "JobCirc",
+        "liveUrl": "https://jobcirc.com/",
+        "shortDescription": "Plataforma que brinda las herramientas para automatizar la administración de anuncios de trabajo.",
+        "description": [
+          "Uno de los primeros proyectos en los que participé como freelancer. Mi aporte estuvo orientado a la parte visual, aunque también estuve involucrado en algunas funcionalidades del backend realizado en Wordpress."
+        ],
+        "techUsed": "HTML, CSS, JavaScript, Wordpress, MySQL"
       }
     ]
   },

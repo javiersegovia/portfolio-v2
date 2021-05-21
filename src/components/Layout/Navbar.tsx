@@ -9,7 +9,9 @@ import { ThemeButton } from '@components/Button/ThemeButton'
 import { useAnimations } from './Navbar.hooks'
 import { ChangeLanguage } from './ChangeLanguage'
 
-const NavItem = tw.li`text-center transition duration-100 hover:text-primary-400 font-sans lowercase`
+import { sectionIds } from '@views/home/Home'
+
+const NavItem = tw.li`text-center transition duration-100 hover:text-primary-400 text-lg font-mono lowercase`
 
 const BottomSpacer = () => {
   const [container, setContainer] = useState<HTMLDivElement>()
@@ -55,10 +57,10 @@ export const Navbar = ({ startAnimation = false }) => {
             tw="flex items-center justify-center lg:justify-end py-3 text-lg space-x-4 md:pt-10 md:text-2xl md:space-x-16"
           >
             <NavItem>
-              <a href="#">{t('about-me')}</a>
+              <a href={`#${sectionIds.whoAmI}`}>{t('about-me')}</a>
             </NavItem>
             <NavItem>
-              <a href="#">{t('my-work')}</a>
+              <a href={`#${sectionIds.projects}`}>{t('my-work')}</a>
             </NavItem>
             {/* TODO: Uncomment when we have the blog */}
             {/* <NavItem>
@@ -67,7 +69,7 @@ export const Navbar = ({ startAnimation = false }) => {
                 </Link>
               </NavItem> */}
             <NavItem>
-              <a href="#">{t('get-in-touch')}</a>
+              <a href={`#${sectionIds.footer}`}>{t('get-in-touch')}</a>
             </NavItem>
 
             <ThemeButton tw="hidden md:block" />

@@ -1,10 +1,17 @@
 {
+  "intro-words": [
+    "innovation",
+    "minimalism",
+    "creativity",
+    "technology",
+    "improvement"
+  ],
   "header": {
-    "hello": "Hey!",
+    "hello": "Create. Innovate. Improve.",
     "i-am": "I am",
-    "subtitle": "A full stack developer who specializes in building exceptional (and fun!) experiences for the web",
+    "subtitle": "A full-stack developer who specializes in building exceptional experiences for the web",
     "question": "Want to talk?",
-    "contact-me": "Send me a message"
+    "contact-me": "Contact me"
   },
   "who-am-i": {
     "title": "So, <0>about me</0>",
@@ -13,24 +20,47 @@
     "content-3": "Since then, I’ve had diverse experiences in the development world: from working with multiple clients as an indie freelancer, to be part of a whole team of amazing developers following an agile methodology.",
     "content-4": "Today, these are some of the tools that I have experience with:"
   },
-  "recent-work": {
+  "my-work": {
     "title": "Recent <0>projects</0>",
+    "live-url": "Website:",
+    "git-url": "Source code:",
+    "technologies": "Technologies that I have used:",
     "works": [
       {
         "title": "HoyTrabajas",
-        "shortDescription": "A colombian-based company that finds the perfect candidate match for hundreds of job offers",
+        "liveUrl": "https://hoytrabajas.com",
+        "shortDescription": "Recruitment platform for matching candidates and job offers",
         "description": [
-          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
-          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
-        ]
+          "I worked as a full-stack developer in multiple functionalities of the platform, including the layout, user interface and experience, the management of the database and the implementation of services."
+        ],
+        "techUsed": "HAML, SASS, JavaScript, React, Ruby on Rails, RSpec, Docker, Elasticsearch, PostgreSQL"
       },
       {
-        "title": "Ecommerce Boilerplate",
-        "shortDescription": "Side project. Ecommerce with multiple functionalities.",
+        "title": "GoShop",
+        "liveUrl": "https://www.goshop.com.do/",
+        "shortDescription": "Ecommerce platform for creating quickly online stores",
         "description": [
-          "HoyT sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis.",
-          "Do sit sunt dolore consectetur consectetur Lorem ea tempor qui laborum sit officia aliquip. Voluptate et reprehenderit consectetur adipisicing duis dolore. Laboris non ea irure enim laboris ea ea. Deserunt reprehenderit magna labore nostrud ullamco aliquip id officia id. Ex tempor id est dolor amet tempor eu commodo deserunt. Ad occaecat eiusmod sunt aliqua quis."
-        ]
+          "I worked as a freelancer in the implementation of themes for the platform's individual stores, making visual and technical adjustments regarding the particular functionalities of each theme in question."
+        ],
+        "techUsed": "HAML, SASS, Ruby on Rails, RSpec, PostgreSQL"
+      },
+      {
+        "title": "Slatam",
+        "gitUrl": "https://github.com/javiersegovia/slatam-ts",
+        "shortDescription": "A work-in-progress marketplace platform for B2B",
+        "description": [
+          "Slatam is a project in development that has helped me to test how different tools of the JavaScript ecosystem can work together. I work on it in my free time and, in the future, the goal is that it becomes a platform for global trade oriented to B2B."
+        ],
+        "techUsed": "HTML, TypeScript, React, NextJS, Styled Components, Tailwind, GraphQL, NestJS, NodeJS, PostgreSQL, Docker"
+      },
+      {
+        "title": "JobCirc",
+        "liveUrl": "https://jobcirc.com/",
+        "shortDescription": "Tools to automatically manage your commercial job board postings",
+        "description": [
+          "One of the first projects in which I participated as a freelancer. My contribution was oriented to the visual part, although I was also involved in some functionalities of the backend made in Wordpress."
+        ],
+        "techUsed": "HTML, CSS, JavaScript, Wordpress, MySQL"
       }
     ]
   },

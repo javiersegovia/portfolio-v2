@@ -6,9 +6,12 @@ import { constants } from '@lib/utils/constants'
 
 const { linkedinProfile, githubProfile, contactEmail } = constants
 
-export const Footer = () => {
+export const Footer = ({ ...props }) => {
   return (
-    <footer tw="w-full flex bg-primary-400 text-black font-bold text-lg py-12">
+    <footer
+      tw="w-full flex bg-primary-400 text-black font-bold text-lg py-12"
+      {...props}
+    >
       <div tw="space-y-2 mx-auto text-center">
         <ul tw="flex mx-auto space-x-4 text-3xl justify-center mb-2">
           <li>

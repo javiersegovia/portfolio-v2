@@ -1,13 +1,14 @@
 import { FullScreen } from '@components/UI'
+import useTranslation from 'next-translate/useTranslation'
 import { useIntroAnimations } from './IntroPresentation.hooks'
 
-const words = [
-  'innovation',
-  'minimalism',
-  'creativity',
-  'technology',
-  'improvement',
-]
+// const words = [
+//   'innovation',
+//   'minimalism',
+//   'creativity',
+//   'technology',
+//   'improvement',
+// ]
 
 interface IntroPresentationProps {
   onComplete: () => void
@@ -24,6 +25,12 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
     onComplete,
   })
 
+  const { t } = useTranslation('home')
+
+  const introWords: string[] = t('intro-words', null, {
+    returnObjects: true,
+  })
+
   return (
     <FullScreen
       sectionRef={screenRef}
@@ -33,7 +40,7 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
         ref={wrapperDesktopRef}
         tw="relative m-auto w-full h-40 text-center hidden md:block"
       >
-        {words.map((word) => (
+        {introWords.map((word) => (
           <h2
             ref={(el) =>
               introDesktopRef.current?.push(el as HTMLHeadingElement)
@@ -50,7 +57,7 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
         ref={wrapperMobileRef}
         tw="relative m-auto w-full h-40 lg:h-40 text-center block md:hidden"
       >
-        {words.map((word) => (
+        {introWords.map((word) => (
           <h2
             ref={(el) => introMobileRef.current?.push(el as HTMLHeadingElement)}
             key={word}

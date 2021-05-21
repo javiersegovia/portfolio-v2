@@ -2,6 +2,10 @@ import _tw, { GlobalStyles as BaseStyles, theme } from 'twin.macro'
 import { Global, css } from '@emotion/react'
 
 const customStyles = css`
+  html {
+    scroll-behavior: smooth;
+  }
+
   *:focus,
   button:focus {
     ${_tw`outline-none!`}

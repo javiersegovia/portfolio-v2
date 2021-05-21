@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from 'react'
+import React, { useRef } from 'react'
 import tw from 'twin.macro'
 
 interface FullScreenProps {
@@ -6,6 +6,7 @@ interface FullScreenProps {
   backgroundColor?: 'white'
   minScreen?: boolean
   sectionRef?: any
+  id?: string
 }
 
 export const FullScreen = ({

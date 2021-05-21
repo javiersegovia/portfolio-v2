@@ -7,6 +7,7 @@ export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
   const h3Ref = useRef<HTMLHeadingElement>(null)
   const h1Ref = useRef<HTMLHeadingElement>(null)
   const descriptionRef = useRef<HTMLParagraphElement>(null)
+  const arrowRef = useRef<HTMLDivElement>(null)
 
   const { paused } = timelineOptions
 
@@ -31,14 +32,17 @@ export const useAnimations: TUseAnimations = ({ ...timelineOptions }) => {
       },
     }
 
-    timeline.fromTo(h3Ref.current, fromTo.from, fromTo.to)
-    timeline.fromTo(h1Ref.current, fromTo.from, fromTo.to)
-    timeline.fromTo(descriptionRef.current, fromTo.from, fromTo.to)
+    const refsToAnimate = [h3Ref, h1Ref, descriptionRef, arrowRef]
+
+    refsToAnimate.forEach((ref) => {
+      timeline.fromTo(ref.current, fromTo.from, fromTo.to)
+    })
   }, [timeline])
 
   return {
     h3Ref,
     h1Ref,
     descriptionRef,
+    arrowRef,
   }
 }
