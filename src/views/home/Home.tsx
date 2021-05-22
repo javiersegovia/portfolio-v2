@@ -18,7 +18,7 @@ export const sectionIds = {
 }
 
 export const HomeView = () => {
-  const [introIsFinished, { setTrue }] = useToggle(true)
+  const [introIsFinished, { setTrue }] = useToggle(false)
 
   return (
     <>
