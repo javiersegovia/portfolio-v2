@@ -16,11 +16,11 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
 
   const desktopAnimations = (timeline: gsap.core.Timeline) => {
     const wordsElementsDesktop = introDesktopRef.current
-    const wrapperElementsDesktop = wrapperDesktopRef.current
+    const wrapperElementDesktop = wrapperDesktopRef.current
 
     const screenEl = screenRef.current
 
-    timeline.to(screenEl, {
+    timeline.to(wrapperElementDesktop, {
       visibility: 'visible',
     })
 
@@ -62,13 +62,13 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
             yPercent: 0,
             fontSize: 140 + i * 30,
             duration: 0.35,
-            delay: 0.25,
+            delay: 0,
             ease: 'back',
           }
         )
 
         timeline.to(
-          wrapperElementsDesktop,
+          wrapperElementDesktop,
           {
             duration: 0.15,
             yPercent: i * -110,
@@ -78,14 +78,14 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
       }
     })
 
-    timeline.to(wrapperElementsDesktop, {
+    timeline.to(wrapperElementDesktop, {
       duration: 0,
       overflow: 'visible',
       delay: 0,
     })
 
     timeline.to(
-      wrapperElementsDesktop,
+      wrapperElementDesktop,
       {
         skewY: 0,
         skewX: 0,
@@ -110,9 +110,13 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
 
   const mobileAnimations = (timeline: gsap.core.Timeline) => {
     const wordsElementsMobile = introMobileRef.current
-    const wrapperElementsMobile = wrapperMobileRef.current
+    const wrapperElementMobile = wrapperMobileRef.current
 
     const screenEl = screenRef.current
+
+    timeline.to(wrapperElementMobile, {
+      visibility: 'visible',
+    })
 
     wordsElementsMobile.forEach((word, i) => {
       const isLast = i === wordsElementsMobile.length - 1
@@ -160,7 +164,7 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
         )
 
         timeline.to(
-          wrapperElementsMobile,
+          wrapperElementMobile,
           {
             duration: 0.15,
             yPercent: i * -40,
@@ -170,14 +174,14 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
       }
     })
 
-    timeline.to(wrapperElementsMobile, {
+    timeline.to(wrapperElementMobile, {
       duration: 0,
       overflow: 'visible',
       delay: 0,
     })
 
     timeline.to(
-      wrapperElementsMobile,
+      wrapperElementMobile,
       {
         skewY: 0,
         skewX: 0,

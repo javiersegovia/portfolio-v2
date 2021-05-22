@@ -34,11 +34,11 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
   return (
     <FullScreen
       sectionRef={screenRef}
-      tw="fixed top-0 left-0 right-0 bottom-0 dark:bg-black bg-primary-400 z-50 flex h-full invisible"
+      tw="fixed top-0 left-0 right-0 bottom-0 dark:bg-black bg-primary-400 z-50 flex h-full"
     >
       <div
         ref={wrapperDesktopRef}
-        tw="relative m-auto w-full h-40 text-center hidden md:block"
+        tw="relative m-auto w-full h-40 text-center hidden md:block invisible"
       >
         {introWords.map((word) => (
           <h2
@@ -55,7 +55,7 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
 
       <div
         ref={wrapperMobileRef}
-        tw="relative m-auto w-full h-40 lg:h-40 text-center block md:hidden"
+        tw="relative m-auto w-full h-40 lg:h-40 text-center block md:hidden invisible"
       >
         {introWords.map((word) => (
           <h2
