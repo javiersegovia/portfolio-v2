@@ -72,6 +72,8 @@
     "title": "Contacto",
     "subtitle": "Deja tu mensaje \n ¡No tardo en responder!",
     "submit": "Enviar",
+    "title-successful": "Mensaje enviado",
+    "content-successful": "¡Gracias por tu mensaje, {{name}}! \n\nPronto me comunicaré contigo.",
     "fields": {
       "name": {
         "label": "Nombre",

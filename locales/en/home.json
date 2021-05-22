@@ -71,6 +71,8 @@
   "send-message": {
     "title": "Message me",
     "subtitle": "Want to say something? I'm glad to hear it!",
+    "title-successful": "Message sent",
+    "content-successful": "Thank you for your message, {{name}}. \n\nI will contact you soon!",
     "submit": "Send",
     "fields": {
       "name": {

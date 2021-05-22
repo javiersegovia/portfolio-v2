@@ -10,6 +10,7 @@ export const disableScroll = () => {
 
   document.body.style.overflowY = 'scroll'
   document.body.style.position = 'fixed'
+  document.documentElement.style.scrollBehavior = 'initial'
   document.body.style.top = `-${y}px`
   document.body.style.left = `${x}px`
 }
@@ -24,6 +25,8 @@ export const enableScroll = () => {
   document.body.style.left = ''
 
   window.scrollTo(parseInt(scrollX || '0') * -1, parseInt(scrollY || '0') * -1)
+
+  document.documentElement.style.scrollBehavior = 'smooth'
 }
 
 export const useDisableBodyScroll = () => {
