@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import { useCallback, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 // todo: leave comments
 

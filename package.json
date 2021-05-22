@@ -17,18 +17,6 @@
     "lint:type-check": "tsc --pretty --noEmit",
     "find:unused": "next-unused"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn run lint:type-check"
-    }
-  },
-  "lint-staged": {
-    "*.@(ts|tsx)": [
-      "yarn lint:lint",
-      "yarn lint:format"
-    ]
-  },
   "prettier": {
     "semi": false,
     "singleQuote": true,
