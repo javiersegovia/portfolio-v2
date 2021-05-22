@@ -1,3 +1,3 @@
-# TypeScript NextJS Starter
+# Portfolio
 
-The purpose of this project is to serve as a base for future developments.
+Built with React, TypeScript, NextJS and Tailwind.

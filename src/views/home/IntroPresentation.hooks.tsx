@@ -20,6 +20,10 @@ export const useIntroAnimations: TUseAnimations = ({ ...timelineOptions }) => {
 
     const screenEl = screenRef.current
 
+    timeline.to(screenEl, {
+      visibility: 'visible',
+    })
+
     wordsElementsDesktop.forEach((word, i) => {
       const isLast = i === wordsElementsDesktop.length - 1
 

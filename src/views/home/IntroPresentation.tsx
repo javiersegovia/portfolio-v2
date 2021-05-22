@@ -34,7 +34,7 @@ export const IntroPresentation = ({ onComplete }: IntroPresentationProps) => {
   return (
     <FullScreen
       sectionRef={screenRef}
-      tw="fixed top-0 left-0 right-0 bottom-0 dark:bg-black bg-primary-400 z-50 flex h-full"
+      tw="fixed top-0 left-0 right-0 bottom-0 dark:bg-black bg-primary-400 z-50 flex h-full invisible"
     >
       <div
         ref={wrapperDesktopRef}

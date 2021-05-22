@@ -18,7 +18,7 @@ const theme = {
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <NextThemeProvider attribute="class">
+      <NextThemeProvider attribute="class" defaultTheme="dark">
         <ThemeProvider theme={theme}>
           <GlobalStyles />
           <Component {...pageProps} />
