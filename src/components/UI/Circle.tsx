@@ -1,3 +1,4 @@
+import { SVGProps } from 'react'
 import { useAnimations } from './Circle.hooks'
 
 type CircleProps = {
@@ -5,6 +6,7 @@ type CircleProps = {
   size?: number
   paused?: boolean
   withAnimation?: boolean
+  svgProps?: SVGProps<SVGSVGElement>
 }
 
 export const Circle = ({
@@ -12,6 +14,7 @@ export const Circle = ({
   withAnimation = false,
   paused = false,
   size = 250,
+  svgProps,
   ...styles
 }: CircleProps) => {
   const { progress, contentRef } = useAnimations({
@@ -32,6 +35,7 @@ export const Circle = ({
         xmlns="http://www.w3.org/2000/svg"
         tw="absolute w-full h-full"
         preserveAspectRatio="xMinYMin"
+        {...svgProps}
       >
         <circle
           cx="50%"

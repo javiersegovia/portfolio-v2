@@ -49,7 +49,7 @@ export const LetsTalk = () => {
             >
               <Circle
                 size={50}
-                tw="text-black bg-white dark:text-white dark:bg-black z-10 hover:(text-red-500)"
+                tw="text-black bg-white dark:text-white dark:bg-darkSecondary z-10 hover:(text-red-500)"
               >
                 {isFormOpen && <RiCloseFill tw="m-auto text-2xl" />}
               </Circle>

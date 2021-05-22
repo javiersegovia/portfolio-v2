@@ -28,14 +28,14 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
   return (
     <header tw="my-auto">
       <Container tw="flex flex-col" smaller>
-        <h3 ref={h3Ref} tw="text-center md:text-left px-20 lg:px-0">
-          <Stroke tw="text-5xl md:text-7xl lg:text-4xl italic text-white dark:text-black">
+        <h3 ref={h3Ref} tw="text-center lg:text-left px-20 lg:px-0">
+          <Stroke tw="text-xl sm:text-2xl md:text-3xl italic text-white dark:text-black">
             {t`header.hello`}
           </Stroke>
         </h3>
         <h1
           ref={h1Ref}
-          tw="mt-10 mx-auto text-7xl md:text-9xl lg:text-9xl text-center"
+          tw="mt-4 md:mt-5 lg:mt-7 mx-auto text-7xl md:text-9xl lg:text-9xl text-center"
         >
           {t`header.i-am`}
           <span tw="text-primary-400"> Javier</span>
@@ -48,25 +48,30 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
         </p>
       </Container>
 
-      <Container tw="flex justify-center mt-10 md:mt-20 lg:mt-0 lg:justify-between items-center">
-        <Circle withAnimation paused={!startAnimation}>
-          <button
-            type="button"
-            tw="w-full h-full flex items-end italic justify-center flex-col z-10 cursor-pointer font-mono text-lg lg:text-xl"
-            onClick={openModal}
+      <Container tw="flex justify-center mt-0 md:mt-20 lg:mt-0 lg:justify-between items-center">
+        <button
+          type="button"
+          tw="flex italic justify-center flex-col z-10 cursor-pointer font-mono text-lg lg:text-xl"
+          onClick={openModal}
+        >
+          <Circle
+            withAnimation
+            paused={!startAnimation}
+            svgProps={{
+              className: 'hidden md:block',
+            }}
           >
-            {/* {t`header.question`} <br /> */}
-            <span tw="font-bold italic text-3xl font-sans">{t`header.contact-me`}</span>
-            {/* <span tw="text-black px-4 py-3 rounded-md bg-primary-400 font-bold not-italic">{t`header.contact-me`}</span> */}
-          </button>
-        </Circle>
+            <span tw="italic px-4 py-3 font-sans rounded-lg underline bg-primary-400 text-black text-2xl md:bg-transparent md:p-0 dark:md:font-bold dark:md:text-primary-400 md:text-3xl">{t`header.contact-me`}</span>
+            {/* <span tw="text-black px-4 py-3 rounded-md bg-primary-400 font-bold font-sans text-2xl ">{t`header.contact-me`}</span> */}
+          </Circle>
+        </button>
 
         {isModalOpen && (
           <Modal withOverlay onRequestClose={closeModal}>
             {({ ref }) => (
               <div
                 ref={ref}
-                tw="bg-white dark:bg-black relative m-auto rounded-md px-10 py-12 max-w-full sm:h-auto sm:max-w-md w-full h-full"
+                tw="bg-white dark:bg-darkSecondary relative m-auto rounded-md px-10 py-12 max-w-full sm:h-auto sm:max-w-md w-full h-full"
               >
                 <SendMessage onRequestClose={closeModal} />
               </div>

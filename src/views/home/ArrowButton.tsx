@@ -6,7 +6,7 @@ export const ArrowButton = forwardRef<HTMLDivElement, { href?: string }>(
       <div tw="w-full absolute bottom-0 mt-auto mb-5" ref={ref}>
         <a
           type="button"
-          tw="relative mx-auto cursor-pointer hidden md:block md:(w-16 h-16) lg:(w-20 h-20)"
+          tw="relative mx-auto cursor-pointer hidden lg:block md:(w-16 h-16) lg:(w-20 h-20)"
           href={href}
         >
           <svg

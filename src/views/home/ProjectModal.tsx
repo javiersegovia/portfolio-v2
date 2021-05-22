@@ -25,17 +25,22 @@ export const ProjectModal = ({
           tw="m-auto max-w-xl h-4/6 relative flex flex-col lg:flex-row rounded-md overflow-hidden"
         >
           <div
-            tw="bg-white dark:bg-black relative top-0 my-auto px-10 sm:px-20 py-12 w-full h-full"
+            tw="bg-white dark:bg-darkSecondary relative top-0 my-auto px-10 sm:px-20 py-12 w-full h-full"
             css={[!isOdd ? tw`ml-auto` : tw`mr-auto`]}
           >
             <CloseButton onClick={hide} tw=" top-6 right-10" size="xl" />
 
             <div tw="height[95%] overflow-y-auto mt-10 sm:mt-0 max-w-xl mx-auto">
-              <h3 tw="text-5xl font-sans text-center mt-10 text-primary-400">
+              {/* <h3 tw="text-5xl font-sans text-center mt-10 text-primary-400">
                 {project.title}
-              </h3>
+              </h3> */}
+              <img
+                src={`/img/logo-${project.title.toLowerCase()}.png`}
+                tw="object-contain mx-auto max-width[200px] pt-5 pb-2"
+                alt="Project icon"
+              />
 
-              <article tw="pb-80 sm:pb-0 mt-10 space-y-10 text-base text-justify overflow-x-auto">
+              <article tw="mt-10 space-y-10 text-base text-justify overflow-x-auto">
                 {project.liveUrl && (
                   <div tw="mb-10 text-sm text-center">
                     <span tw="italic">{t`my-work.live-url`}</span> <br />

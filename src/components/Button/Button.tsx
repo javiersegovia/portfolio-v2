@@ -33,7 +33,7 @@ export const Button = ({
       type={type}
       disabled={disabled}
       css={[
-        _tw`w-full flex justify-center rounded-md font-medium transition duration-100 text-center`,
+        _tw`w-full flex justify-center rounded-md font-medium transition duration-100 text-center font-mono`,
 
         size === 'MD' && _tw`py-3`,
         size === 'SM' && _tw`py-2`,

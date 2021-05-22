@@ -20,7 +20,7 @@ export const Phone = ({ ...props }) => {
     opacity: ${(progress / 500) | 0};
 
     .dark & {
-      fill: ${theme`colors.almostBlack`};
+      fill: #0e121d;
     }
   `
 

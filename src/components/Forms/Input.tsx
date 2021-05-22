@@ -9,7 +9,7 @@ import { ErrorMessage } from './ErrorMessage'
 import { Label } from './Label'
 
 export const baseStyles = css`
-  ${tw`bg-white dark:bg-black shadow-sm block w-full p-3 border text-sm leading-6`}
+  ${tw`bg-white dark:bg-darkSecondary shadow-sm block w-full p-3 border text-sm leading-6`}
   ${tw`rounded-md border-gray-300 focus:outline-none focus:ring-2`}
   ${tw`focus:border-blue-400 focus:ring-blue-400`}
 `

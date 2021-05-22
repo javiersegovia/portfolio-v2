@@ -22,12 +22,15 @@ export const useClickAway = <E extends Event = Event>(
       const { current: element } = ref
 
       if (!element?.contains(event.target as Node) && savedCallback.current) {
+        event.preventDefault()
         savedCallback.current(event)
       }
     }
 
     for (const eventName of events) {
-      document.addEventListener(eventName, handler)
+      document.addEventListener(eventName, handler, {
+        passive: false,
+      })
     }
 
     return () => {

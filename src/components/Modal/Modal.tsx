@@ -9,7 +9,7 @@ interface ChildrenProps {
 
 interface ModalProps {
   children: ({ ref }: ChildrenProps) => ReactNode
-  onRequestClose?: () => void
+  onRequestClose?: (e: any) => void
   withOverlay?: boolean
   wrapperElement?: React.ElementType
 }

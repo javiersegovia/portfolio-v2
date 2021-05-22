@@ -13,7 +13,7 @@ export const ThemeButton = ({ ...props }) => {
   return (
     <button
       type="button"
-      tw="hover:(text-primary-400) text-xl"
+      tw="hover:(text-primary-400) text-2xl"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       {...props}
     >

@@ -24,15 +24,15 @@ module.exports = {
         blue: colors.blue,
         teal: colors.teal,
         purple: colors.purple,
-        almostBlack: '#131313',
         primary: {
           ...colors.amber,
           400: '#ECBE1D',
         },
+        darkSecondary: '#060913',
       },
     },
     fontFamily: {
-      sans: ['Cano', ...defaultTheme.fontFamily.sans],
+      sans: ['Drakalligro', ...defaultTheme.fontFamily.sans],
       mono: ['UniviaPro', ...defaultTheme.fontFamily.mono],
     },
   },

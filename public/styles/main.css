@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Cano';
-  src: url('/fonts/Cano.otf') format('otf');
+  font-family: 'Drakalligro';
+  src: url('/fonts/Drakalligro.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

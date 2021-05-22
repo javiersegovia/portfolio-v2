@@ -21,7 +21,7 @@ const customStyles = css`
   }
 
   .dark body {
-    ${_tw`bg-black`}
+    ${_tw`bg-darkSecondary text-white`}
   }
 
   h1,
@@ -43,7 +43,7 @@ const customStyles = css`
 
   .dark & {
     .svgElement {
-      fill: ${theme`colors.black`};
+      fill: ${theme`colors.darkSecondary`};
     }
   }
 `

@@ -54,7 +54,7 @@ export const WhoAmI = () => {
   return (
     <>
       <Container tw="relative w-full h-auto flex flex-row items-center justify-center space-x-5 px-8 xl:px-0">
-        <div tw="mt-72 sm:mt-60 bg-white dark:bg-black z-10 border-primary-400 border-2 rounded-lg py-10 max-w-lg px-10 md:px-8 lg:(mt-0 bg-transparent border-none)">
+        <div tw="mt-72 sm:mt-60 bg-white dark:bg-darkSecondary z-10 border-primary-400 border-2 rounded-lg py-10 max-w-lg px-10 md:px-8 lg:(mt-0 bg-transparent border-none)">
           <Title tw="text-center lg:text-left">
             <Trans
               i18nKey="home:who-am-i.title"
