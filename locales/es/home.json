@@ -64,10 +64,6 @@
       }
     ]
   },
-  "lets-talk": {
-    "question": "¿Alguna idea?",
-    "call-to-action": "¡Conversemos!"
-  },
   "send-message": {
     "title": "Contacto",
     "subtitle": "Deja tu mensaje \n ¡No tardo en responder!",

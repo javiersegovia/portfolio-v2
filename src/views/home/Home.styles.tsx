@@ -9,14 +9,14 @@ export const StyledPhoneWrapper = styled.div`
     ${tw`w-full`}
   }
 
-  ${tw`absolute mt-auto mx-auto bottom-0 left-0 right-0`}
+  ${tw`relative mt-auto mx-auto bottom-0 left-0 right-0`}
 `
 
 export const StyledContactWrapper = styled.div`
   width: 320px;
   height: 685px;
 
-  ${tw`z-10 flex max-w-full relative sm:absolute mx-auto mt-auto mb-20 top-16 left-0 right-0`}
+  ${tw`z-10 flex max-w-full relative sm:absolute mx-auto mt-auto mb-20 top-16 left-0 right-0 `}
 `
 
 export const StyledGuy = styled.div`

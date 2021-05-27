@@ -11,6 +11,7 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   showCheckOnSuccess?: boolean
   size?: TButtonSizes
   variant?: TButtonVariants
+  isFab?: boolean
 }
 
 export const Button = ({
@@ -20,6 +21,7 @@ export const Button = ({
   disabled = false,
   children,
   isLoading = false,
+  isFab = false,
   showCheckOnSuccess = false,
   ...otherProps
 }: IButtonProps) => {
@@ -37,6 +39,8 @@ export const Button = ({
 
         size === 'MD' && _tw`py-3`,
         size === 'SM' && _tw`py-2`,
+
+        isFab && _tw`p-0 rounded-full w-auto`,
 
         disabled && _tw`opacity-40 cursor-not-allowed`,
 

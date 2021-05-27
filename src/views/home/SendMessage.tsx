@@ -13,9 +13,13 @@ interface MessageForm {
 
 interface SendMessageProps {
   onRequestClose?: () => void
+  submitButton?: ({ isLoading }: { isLoading: boolean }) => React.ReactNode
 }
 
-export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
+export const SendMessage = ({
+  onRequestClose,
+  submitButton,
+}: SendMessageProps) => {
   const formMethods = useForm<MessageForm>()
 
   const {
@@ -112,15 +116,19 @@ export const SendMessage = ({ onRequestClose }: SendMessageProps) => {
                 }}
               />
 
-              <Button
-                type="submit"
-                tw="rounded-md bg-primary-400 text-black font-bold"
-                isLoading={isLoading || isSubmitting}
-                disabled={isLoading || isSubmitting}
-                showCheckOnSuccess
-              >
-                {t`send-message.submit`}
-              </Button>
+              {submitButton ? (
+                submitButton({ isLoading: isLoading || isSubmitting })
+              ) : (
+                <Button
+                  type="submit"
+                  tw="rounded-md bg-primary-400 text-black font-bold"
+                  isLoading={isLoading || isSubmitting}
+                  disabled={isLoading || isSubmitting}
+                  showCheckOnSuccess
+                >
+                  {t`send-message.submit`}
+                </Button>
+              )}
             </form>
           </FormProvider>
         </>

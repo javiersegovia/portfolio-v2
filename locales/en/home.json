@@ -64,10 +64,6 @@
       }
     ]
   },
-  "lets-talk": {
-    "question": "Got an idea?",
-    "call-to-action": "Let's talk!"
-  },
   "send-message": {
     "title": "Message me",
     "subtitle": "Want to say something? I'm glad to hear it!",
