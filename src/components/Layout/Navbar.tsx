@@ -35,10 +35,8 @@ const BottomSpacer = () => {
     : null
 }
 
-export const Navbar = ({ startAnimation = false }) => {
-  const { ulRef } = useAnimations({
-    paused: !startAnimation,
-  })
+export const Navbar = () => {
+  const { ulRef } = useAnimations()
 
   const { t } = useTranslation('common')
 

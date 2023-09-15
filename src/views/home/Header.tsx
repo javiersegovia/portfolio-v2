@@ -11,17 +11,11 @@ import { SendMessage } from './SendMessage'
 import { useAnimations } from './Header.hooks'
 import { ArrowButton } from './ArrowButton'
 
-interface HeaderProps {
-  startAnimation?: boolean
-}
-
-export const Header = ({ startAnimation = false }: HeaderProps) => {
+export const Header = () => {
   const [isModalOpen, { setTrue: openModal, setFalse: closeModal }] =
     useToggle()
 
-  const { h3Ref, h1Ref, descriptionRef, arrowRef } = useAnimations({
-    paused: !startAnimation,
-  })
+  const { h3Ref, h1Ref, descriptionRef, arrowRef } = useAnimations()
 
   const { t } = useTranslation('home')
 
@@ -29,7 +23,7 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
     <header tw="my-auto">
       <Container tw="flex flex-col" smaller>
         <h3 ref={h3Ref} tw="text-center lg:text-left px-20 lg:px-0">
-          <Stroke tw="text-xl sm:text-2xl md:text-3xl italic text-white dark:text-black">
+          <Stroke tw="text-xl sm:text-2xl text-white dark:text-black">
             {t`header.hello`}
           </Stroke>
         </h3>
@@ -38,7 +32,7 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
           tw="mt-4 md:mt-5 lg:mt-7 mx-auto text-7xl md:text-9xl lg:text-9xl text-center"
         >
           {t`header.i-am`}
-          <span tw="text-primary-400"> Javier</span>
+          <span tw="text-primary-400 font-bold"> Javier</span>
         </h1>
         <p
           ref={descriptionRef}
@@ -51,21 +45,19 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
       <Container tw="flex justify-center mt-0 md:mt-20 lg:mt-0 lg:justify-between items-center">
         <button
           type="button"
-          tw="flex italic justify-center flex-col z-10 cursor-pointer font-mono text-lg lg:text-xl"
+          className="bounce-animation"
+          tw="flex justify-center  flex-col z-10 cursor-pointer font-mono text-lg lg:text-xl"
           onClick={openModal}
         >
           <Circle
             withAnimation
-            paused={!startAnimation}
             svgProps={{
               className: 'hidden md:block',
             }}
           >
-            <span tw="italic px-4 py-3 font-sans rounded-lg underline bg-primary-400 text-black text-2xl md:bg-transparent md:p-0 dark:md:font-bold dark:md:text-primary-400 md:text-3xl">{t`header.contact-me`}</span>
-            {/* <span tw="text-black px-4 py-3 rounded-md bg-primary-400 font-bold font-sans text-2xl ">{t`header.contact-me`}</span> */}
+            <span tw="px-4 py-3 font-sans font-bold rounded-lg bg-primary-400 text-black text-2xl md:bg-transparent md:p-0 dark:md:font-bold dark:md:text-primary-400 md:text-3xl">{t`header.contact-me`}</span>
           </Circle>
         </button>
-
         {isModalOpen && (
           <Modal withOverlay onRequestClose={closeModal}>
             {({ ref }) => (
@@ -78,17 +70,11 @@ export const Header = ({ startAnimation = false }: HeaderProps) => {
             )}
           </Modal>
         )}
-
-        {/* 
-          TODO: uncomment when blog is ready
-
-          <div tw="text-right">
-            <p tw="text-primary-400 font-bold text-lg mb-3">
-              ... and I like to write too. My last content:
-            </p>
-            <RecommendedPost />
-          </div> 
-        */}
+        {/* TODO: uncomment when blog is ready */}
+        {/* <div tw="text-right">
+          <p tw="text-primary-400 font-bold text-lg mb-3">My last content:</p>
+          <RecommendedPost />
+        </div> */}
       </Container>
       <ArrowButton ref={arrowRef} href={`#${sectionIds.whoAmI}`} />
     </header>

@@ -31,18 +31,15 @@ export const ProjectModal = ({
             <CloseButton onClick={hide} tw=" top-6 right-10" size="xl" />
 
             <div tw="height[95%] overflow-y-auto mt-10 sm:mt-0 max-w-xl mx-auto">
-              {/* <h3 tw="text-5xl font-sans text-center mt-10 text-primary-400">
-                {project.title}
-              </h3> */}
               <img
-                src={`/img/logo-${project.title.toLowerCase()}.png`}
-                tw="object-contain mx-auto max-width[200px] pt-5 pb-2"
+                src={project.imageUrl}
+                tw="object-contain mx-auto max-width[96px] pt-5 pb-2"
                 alt="Project icon"
               />
 
-              <article tw="mt-10 space-y-10 text-base text-justify overflow-x-auto">
+              <article tw="mt-6 text-base text-justify overflow-x-auto">
                 {project.liveUrl && (
-                  <div tw="mb-10 text-sm text-center">
+                  <div tw="mb-6 text-sm">
                     <span tw="italic">{t`my-work.live-url`}</span> <br />
                     <a
                       href={project.liveUrl}
@@ -56,7 +53,7 @@ export const ProjectModal = ({
                 )}
 
                 {project.gitUrl && (
-                  <div tw="mb-10 text-sm text-center">
+                  <div tw="mb-6 text-sm">
                     <span tw="italic">{t`my-work.git-url`}</span> <br />
                     <a
                       href={project.gitUrl}
@@ -69,11 +66,25 @@ export const ProjectModal = ({
                   </div>
                 )}
 
+                {project.figmaUrl && (
+                  <div tw="mb-6 text-sm">
+                    <span tw="italic">{t`my-work.figma-url`}</span> <br />
+                    <a
+                      href={project.figmaUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      tw="underline hover:text-primary-400"
+                    >
+                      {t`my-work.click-here`}
+                    </a>
+                  </div>
+                )}
+
                 {project.description.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
 
-                <p tw="mt-10 text-sm sm:text-base">
+                <p tw="mt-6 text-sm sm:text-base">
                   <span tw="font-bold">{t`my-work.technologies`}</span> <br />
                   {project.techUsed}
                 </p>

@@ -1,10 +1,8 @@
 import { Navbar } from '@components/Layout/Navbar'
 import { Footer } from '@components/Layout/Footer'
 import { FullScreen } from '@components/UI'
-import { useToggle } from '@lib/hooks/useToggle'
 
 import { Header } from './Header'
-import { IntroPresentation } from './IntroPresentation'
 import { WhoAmI } from './WhoAmI'
 import { Projects } from './Projects'
 import { LetsTalk } from './LetsTalk'
@@ -18,16 +16,13 @@ export const sectionIds = {
 }
 
 export const HomeView = () => {
-  const [introIsFinished, { setTrue }] = useToggle(false)
-
   return (
     <>
       <MovieBG />
 
       <FullScreen minScreen tw="z-20">
-        <Navbar startAnimation={introIsFinished} />
-        {!introIsFinished && <IntroPresentation onComplete={setTrue} />}
-        <Header startAnimation={introIsFinished} />
+        <Navbar />
+        <Header />
       </FullScreen>
 
       <div tw="pt-10 md:pt-96"></div>

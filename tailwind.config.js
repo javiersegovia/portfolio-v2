@@ -32,8 +32,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['Drakalligro', ...defaultTheme.fontFamily.sans],
-      mono: ['UniviaPro', ...defaultTheme.fontFamily.mono],
+      sans: ['CabinetGrotesk', ...defaultTheme.fontFamily.sans],
+      mono: ['Kanit', ...defaultTheme.fontFamily.mono],
     },
   },
   variants: {},

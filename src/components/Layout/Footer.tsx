@@ -9,7 +9,7 @@ const { linkedinProfile, githubProfile, contactEmail } = constants
 export const Footer = ({ ...props }) => {
   return (
     <footer
-      tw="w-full flex bg-primary-400 text-black font-bold text-lg py-12"
+      tw="w-full flex bg-primary-400 text-black font-bold text-lg py-12 pb-20 sm:pb-12"
       {...props}
     >
       <div tw="space-y-2 mx-auto text-center">

@@ -4,6 +4,7 @@ import { useToggle } from '@lib/hooks/useToggle'
 import { down } from 'styled-breakpoints'
 import { ProjectModal } from './ProjectModal'
 import { Project } from './Projects'
+import useTranslation from 'next-translate/useTranslation'
 
 interface ProjectShowcaseProps {
   project: Project
@@ -20,6 +21,7 @@ const StyledWrapper = styled.div`
 
 export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
   const [isShowcaseOpen, { setTrue: show, setFalse: hide }] = useToggle()
+  const { t } = useTranslation('home')
 
   return (
     <>
@@ -27,7 +29,7 @@ export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
         <button type="button" onClick={show} tw="flex">
           <Circle tw="p-10">
             <img
-              src={`/img/logo-${project.title.toLowerCase()}.png`}
+              src={project.imageUrl}
               tw="object-contain"
               alt="Project icon"
             />
@@ -38,8 +40,16 @@ export const ProjectShowcase = ({ project, isOdd }: ProjectShowcaseProps) => {
           tw="text-center md:text-left"
           css={[isOdd && tw`md:row-start-1 md:text-right`]}
         >
-          <h4 tw="text-4xl lg:text-5xl">{project.title}</h4>
-          <p tw="mt-5 text-sm sm:text-base">{project.shortDescription}</p>
+          <h3 tw="text-2xl lg:text-3xl text-primary-500">{project.role}</h3>
+          <h4 tw="text-xl lg:text-2xl">{project.title}</h4>
+
+          <button
+            tw="mt-5 text-sm sm:text-base underline"
+            type="button"
+            onClick={show}
+          >
+            {t('my-work.see-more')}
+          </button>
         </article>
       </StyledWrapper>
 

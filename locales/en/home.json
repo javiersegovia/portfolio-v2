@@ -1,11 +1,4 @@
 {
-  "intro-words": [
-    "innovation",
-    "minimalism",
-    "creativity",
-    "technology",
-    "improvement"
-  ],
   "header": {
     "hello": "Create. Innovate. Improve.",
     "i-am": "I am",
@@ -15,48 +8,83 @@
   },
   "who-am-i": {
     "title": "So, <0>about me</0>",
-    "content-1": "I am Javier Segovia. A developer of {{age}} years old based in Venezuela.",
-    "content-2": "I have been working as a developer since 2016 when out of curiosity I created my first website. I found out that coding was actually fun, so I did some research to learn more about it. I kept learning, practicing, and trying to improve. I wanted to get better at it.",
-    "content-3": "Since then, I have had multiple experiences working as a developer, I have learned new technologies (I still do) and I have collaborated with different teams to create interesting and useful websites and applications. I am confident about my current skills, but I think I will always be a student (especially in this area of work, where everything is moving fast).",
-    "content-4": "Today, these are some of the tools that I have experience with:"
+    "content-1": "As a software developer with over 6 years of experience, I have honed my skills in full-stack development, specializing in JavaScript and React. My journey in software development has been marked by a passion for solving complex problems and a commitment to delivering high-quality solutions. I've had the privilege of working on diverse projects, from e-commerce platforms to data-driven applications, where I've consistently achieved measurable results, such as improving load times by 50% and decreasing the development time by about 30%.",
+    "content-2": "My dedication to staying updated with emerging technologies and my enthusiasm for crafting innovative solutions drive my continued success in this ever-evolving field. Today, these are some of the tools that I have experience with:"
   },
   "my-work": {
-    "title": "Recent <0>projects</0>",
+    "title": "My <0>experience</0>",
     "live-url": "Website:",
     "git-url": "Source code:",
+    "figma-url": "Source design:",
     "technologies": "Technologies that I have used:",
+    "see-more": "See more",
+    "click-here": "Click here",
     "works": [
       {
         "title": "HoyTrabajas",
+        "role": "Full-stack Developer",
         "liveUrl": "https://hoytrabajas.com",
-        "shortDescription": "Recruitment platform for matching candidates and job offers",
+        "imageUrl": "/img/logo-hoytrabajas.png",
         "description": [
-          "I worked as a full-stack developer in multiple functionalities of the platform, including the layout, user interface and experience, the management of the database and the implementation of services."
+          "I worked as a full-stack developer in multiple functionalities of the platform, including the layout, user interface and experience, the management of the database and the implementation of business logic."
         ],
-        "techUsed": "HAML, SASS, JavaScript, React, Ruby on Rails, RSpec, Docker, Elasticsearch, PostgreSQL"
+        "techUsed": "JavaScript, React, Ruby on Rails, RSpec, Docker, Elasticsearch, PostgreSQL"
+      },
+      {
+        "title": "Umany",
+        "role": "Full-stack Developer",
+        "imageUrl": "/img/logo-umany.png",
+        "liveUrl": "https://benefits.umany.co",
+        "description": [
+          "I was responsible for the complete development of the platform, including UI & UX design through Figma, and the implementation of the business logic through continuous delivery and integration."
+        ],
+        "techUsed": "TypeScript, React, Tailwind, NextJS, Remix, PostgreSQL, Docker"
+      },
+      {
+        "title": "TappShare",
+        "role": "UI & UX Designer",
+        "imageUrl": "/img/logo-tappshare.png",
+        "figmaUrl": "https://www.figma.com/file/khVMTPUn0OTrI05WrTWTlg/Tappshare---Redesign?type=design&node-id=0%3A1&mode=design&t=lzSmMVFtjkZZfPCk-1",
+        "description": [
+          "I created a redesign contemplating a new user experience from scratch. It included the landing page and the dashboard section."
+        ],
+        "techUsed": "Figma"
+      },
+      {
+        "title": "Commercium Bank",
+        "role": "FrontEnd Developer",
+        "imageUrl": "/img/logo-commercium.png",
+        "liveUrl": "https://commerciumbank.com/",
+        "description": [
+          "I worked as a freelancer in the design and implementation of the landing page."
+        ],
+        "techUsed": "React, Gatsby"
       },
       {
         "title": "GoShop",
+        "role": "FrontEnd Developer",
+        "imageUrl": "/img/logo-goshop.png",
         "liveUrl": "https://www.goshop.com.do/",
-        "shortDescription": "Ecommerce platform for creating quickly online stores",
         "description": [
           "I worked as a freelancer in the implementation of themes for the platform's individual stores, making visual and technical adjustments regarding the particular functionalities of each theme in question."
         ],
-        "techUsed": "HAML, SASS, Ruby on Rails, RSpec, PostgreSQL"
+        "techUsed": "Ruby on Rails, RSpec"
       },
       {
         "title": "Slatam",
+        "role": "FrontEnd Developer",
+        "imageUrl": "/img/logo-slatam.png",
         "gitUrl": "https://github.com/javiersegovia/slatam-ts",
-        "shortDescription": "A work-in-progress marketplace platform for B2B",
         "description": [
-          "Slatam is a project in development that has helped me to test how different tools of the JavaScript ecosystem can work together. I work on it in my free time and, in the future, the goal is that it becomes a platform for global trade oriented to B2B."
+          "Slatam is a side project that has helped me to test how different tools of the JavaScript ecosystem can work together. It was a full-stack practice."
         ],
-        "techUsed": "HTML, TypeScript, React, NextJS, Styled Components, Tailwind, GraphQL, NestJS, NodeJS, PostgreSQL, Docker"
+        "techUsed": "TypeScript, React, NextJS, Tailwind, GraphQL, NestJS, NodeJS, PostgreSQL, Docker"
       },
       {
         "title": "JobCirc",
+        "role": "FrontEnd Developer",
         "liveUrl": "https://jobcirc.com/",
-        "shortDescription": "Tools to automatically manage your commercial job board postings",
+        "imageUrl": "/img/logo-jobcirc.png",
         "description": [
           "One of the first projects in which I participated as a freelancer. My contribution was oriented to the visual part, although I was also involved in some functionalities of the backend made in Wordpress."
         ],

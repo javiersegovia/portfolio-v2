@@ -58,14 +58,12 @@ export const WhoAmI = () => {
           <Title tw="text-center lg:text-left">
             <Trans
               i18nKey="home:who-am-i.title"
-              components={[<span key="bold" tw="text-primary-400" />]}
+              components={[<span key="bold" tw="text-primary-400 font-bold" />]}
             />
           </Title>
-          <article tw="ml-0 text-sm lg:text-base leading-6 lg:leading-8 mt-5 space-y-4 xl:ml-14 text-justify">
-            <p>{t('who-am-i.content-1', { age: getAge() })}</p>
+          <article tw="ml-0 text-sm lg:text-base leading-6 font-light lg:leading-8 mt-5 space-y-4 xl:ml-14">
+            <p>{t`who-am-i.content-1`}</p>
             <p>{t`who-am-i.content-2`}</p>
-            <p>{t`who-am-i.content-3`}</p>
-            <p>{t`who-am-i.content-4`}</p>
             <StyledImageWrapper tw="dark:opacity-70 flex flex-wrap justify-center sm:justify-start">
               {(Object.keys(imagePaths) as Array<keyof typeof imagePaths>).map(
                 (key) => (
